@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  HomeViewController.swift
 //  Gigsterous
 //
 //  Created by Svacha, Michal on 29/06/16.
@@ -8,18 +8,19 @@
 
 import UIKit
 
+/**
+ Application's home screen - what the user sees when the app is turned on.
+ */
 class HomeViewController: UIViewController {
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        self.navigationItem.title = NSLocalizedString("BASEMENT", comment: "")
+        self.view.backgroundColor = ColorSchemes.activeColorScheme.getRecessiveColor()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  Gigsterous
+
+  Created by Svacha, Michal on 24/08/16.
+  Copyright © 2016 Svacha, Michal. All rights reserved.
+*/
+
+// General UI
+
+"PULL2REFRESH" = "Pull to refresh";
+
+// Basement Screen
+
+"BASEMENT" = "Basement";
+
+// Ensembles Screen
+
+"ENSEMBLES" = "Ensembles";
+
+// Events Screen
+
+"EVENTS" = "Events";
+
+// Auditions Screen
+
+"AUDITIONS" = "Auditions";
+
+// Profile Screen
+
+"PROFILE" = "Profile";
