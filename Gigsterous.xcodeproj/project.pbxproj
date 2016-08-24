@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EB9A0B2FA61A5E3E8165424 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewController.swift; path = GigsterousUITests/EnsemblesTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewController.swift; path = Gigsterous/Classes/Controllers/EnsemblesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		C152E9251D64937C005AAF2F /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditionsTableViewController.swift; sourceTree = "<group>"; };
 		C152E9291D6493A0005AAF2F /* ProfileTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileTableViewController.swift; sourceTree = "<group>"; };
