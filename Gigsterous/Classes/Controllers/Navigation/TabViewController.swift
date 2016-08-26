@@ -35,6 +35,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
      - parameter tabBarController: The tab bar controller whose view controller is transitioning.
      - parameter fromVC: The currently visible view controller.
      - parameter toVC: The view controller intended to be visible after the transition ends.
+     - returns: The UIViewControllerAnimatedTransitioning delegate object responsible for managing the tab bar view controller transition animation.
      */
     func tabBarController(tabBarController: UITabBarController, animationControllerForTransitionFromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         

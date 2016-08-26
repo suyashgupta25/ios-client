@@ -18,7 +18,7 @@ class EventsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = NSLocalizedString("EVENTS", comment: "")
-        self.tableView.tableFooterView = UIView(frame: CGRectZero)
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         self.customRefreshControl = UIRefreshControl()
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))

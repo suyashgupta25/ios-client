@@ -18,7 +18,7 @@ class AuditionsTableViewController: UITableViewController {
         super.viewDidLoad()
 
         self.navigationItem.title = NSLocalizedString("AUDITIONS", comment: "")
-        self.tableView.tableFooterView = UIView(frame: CGRectZero)
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         
         self.customRefreshControl = UIRefreshControl()
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))

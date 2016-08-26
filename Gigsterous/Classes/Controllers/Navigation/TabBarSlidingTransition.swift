@@ -41,13 +41,13 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
         transitionContext.containerView()!.addSubview(destination)
         
         var multiplier: CGFloat = self.isScrollingLeft ? 1.0 : -1.0
-        destination.frame = CGRectMake(multiplier * destination.frame.width, 0, destination.frame.width, destination.frame.height)
+        destination.frame = CGRect(x: multiplier * destination.frame.width, y: 0, width: destination.frame.width, height: destination.frame.height)
         
         multiplier = -multiplier
-        let originNewFrame = CGRectMake(multiplier * origin.frame.width, 0, origin.frame.width, origin.frame.height)
+        let originNewFrame = CGRect(x: multiplier * origin.frame.width, y: 0, width: origin.frame.width, height: origin.frame.height)
         
         UIView.animateWithDuration(transitionDuration(transitionContext), animations: { () -> Void in
-            destination.frame = CGRectMake(0, 0, self.viewSize.width, self.viewSize.height)
+            destination.frame = CGRect(x: 0, y: 0, width: self.viewSize.width, height: self.viewSize.height)
             origin.frame = originNewFrame
         }, completion: { (_) -> Void in
             transitionContext.completeTransition(true)
