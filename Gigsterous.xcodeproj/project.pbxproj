@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09DFB1982FF6F488B220E169 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0AB1F78FBD0FC5FDD27D5AC /* Pods_Gigsterous.framework */; };
-		6655858A534727752CD0D7D4 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C13A8988E6893739DB0B53 /* Pods.framework */; };
+		336C61273DF7D0D7A1009E20 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */; };
 		C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */; };
 		C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9251D64937C005AAF2F /* EventsTableViewController.swift */; };
 		C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */; };
@@ -47,8 +46,7 @@
 
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		25E55A141C39B315CEC7AC2A /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		C0AB1F78FBD0FC5FDD27D5AC /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
 		C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewController.swift; path = Gigsterous/Classes/Controllers/EnsemblesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		C152E9251D64937C005AAF2F /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditionsTableViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +70,8 @@
 		C1F0F4531D24249C004124E2 /* GigsterousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousUITests.swift; sourceTree = "<group>"; };
 		C1F0F4591D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DAF7B6DEB60E38CB61E5773D /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
+		F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6655858A534727752CD0D7D4 /* Pods.framework in Frameworks */,
-				09DFB1982FF6F488B220E169 /* Pods_Gigsterous.framework in Frameworks */,
+				336C61273DF7D0D7A1009E20 /* Pods_Gigsterous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,22 +100,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0FEE80C99E0616A8E2EFC3FB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				DAF7B6DEB60E38CB61E5773D /* Pods-Gigsterous.debug.xcconfig */,
-				25E55A141C39B315CEC7AC2A /* Pods-Gigsterous.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		1C6B135251882588CF3CE799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				12C13A8988E6893739DB0B53 /* Pods.framework */,
-				C0AB1F78FBD0FC5FDD27D5AC /* Pods_Gigsterous.framework */,
+				F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		38CDB4CC56FBA2AF5CC75424 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */,
+				EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C10212621D6D9CF40045C3A9 /* Classes */ = {
@@ -182,7 +180,7 @@
 				C1F0F4561D24249C004124E2 /* GigsterousUITests */,
 				C1F0F4331D24249C004124E2 /* Products */,
 				1C6B135251882588CF3CE799 /* Frameworks */,
-				0FEE80C99E0616A8E2EFC3FB /* Pods */,
+				38CDB4CC56FBA2AF5CC75424 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -558,7 +556,7 @@
 		};
 		C1F0F45D1D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DAF7B6DEB60E38CB61E5773D /* Pods-Gigsterous.debug.xcconfig */;
+			baseConfigurationReference = AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
@@ -571,7 +569,7 @@
 		};
 		C1F0F45E1D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25E55A141C39B315CEC7AC2A /* Pods-Gigsterous.release.xcconfig */;
+			baseConfigurationReference = EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
