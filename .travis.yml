@@ -1,12 +1,9 @@
 language: objective-c
 osx_image: xcode7.3
-xcode_workspace: Gigsterous.xcworkspace
-xcode_scheme: Gigsterous
-xcode_sdk: iphonesimulator9.3
-podfile: Podfile
 
 branches:
   only:
+    - develop
     - master
 env:
   - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
