@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
@@ -187,7 +186,7 @@
         <scene sceneID="UQD-2C-np9">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D64-yK-2A1" customClass="NavigationViewController" customModule="Gigsterous" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Basement" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Basement" image="tab_home" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Jj4-vq-Dan">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -206,7 +205,7 @@
         <scene sceneID="nwM-Vj-ghp">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vQm-c5-Cx7" customClass="NavigationViewController" customModule="Gigsterous" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Ensembles" image="second" id="enw-o3-Ci2"/>
+                    <tabBarItem key="tabBarItem" title="Ensembles" image="tab_ensembles" id="enw-o3-Ci2"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="E55-md-svQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -225,7 +224,7 @@
         <scene sceneID="ZFb-aK-4rO">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NLT-aG-4e7" customClass="NavigationViewController" customModule="Gigsterous" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Events" image="first" id="IDf-aS-PWh"/>
+                    <tabBarItem key="tabBarItem" title="Events" image="tab_events" id="IDf-aS-PWh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cYh-Tj-KeS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -244,7 +243,7 @@
         <scene sceneID="a5u-U2-HC1">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="r9g-We-x4Z" customClass="NavigationViewController" customModule="Gigsterous" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Auditions" image="second" id="7wT-In-ZzT"/>
+                    <tabBarItem key="tabBarItem" title="Auditions" image="tab_auditions" id="7wT-In-ZzT"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="PG4-aI-jnv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -263,7 +262,7 @@
         <scene sceneID="3CM-xx-VZQ">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rsc-JS-slI" customClass="NavigationViewController" customModule="Gigsterous" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="first" id="0qW-Q0-N1t"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="tab_profile" id="0qW-Q0-N1t"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="usK-R9-9to">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -280,7 +279,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="first" width="30" height="30"/>
-        <image name="second" width="30" height="30"/>
+        <image name="tab_auditions" width="30" height="30"/>
+        <image name="tab_ensembles" width="30" height="30"/>
+        <image name="tab_events" width="30" height="30"/>
+        <image name="tab_home" width="30" height="30"/>
+        <image name="tab_profile" width="30" height="30"/>
     </resources>
 </document>
