@@ -12,7 +12,7 @@ import UIKit
  Custom class for transition between view controllers used in TabBarViewController.
  */
 class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
-    var viewSize: CGSize = UIScreen.mainScreen().bounds.size
+    var viewSize: CGSize = UIScreen.main.bounds.size
     var isScrollingLeft = true
     
     /**
@@ -33,12 +33,12 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
      
      - parameter transitionContext: The context object containing information about the transition.
      */
-    func animateTransition(transitionContext: UIViewControllerContextTransitioning) {
-        let origin = transitionContext.viewForKey(UITransitionContextFromViewKey)!
-        let destination = transitionContext.viewForKey(UITransitionContextToViewKey)!
+    func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
+        let origin = transitionContext.view(forKey: UITransitionContextViewKey.from)!
+        let destination = transitionContext.view(forKey: UITransitionContextViewKey.to)!
         
-        transitionContext.containerView()!.addSubview(origin)
-        transitionContext.containerView()!.addSubview(destination)
+        transitionContext.containerView.addSubview(origin)
+        transitionContext.containerView.addSubview(destination)
         
         var multiplier: CGFloat = self.isScrollingLeft ? 1.0 : -1.0
         destination.frame = CGRect(x: multiplier * destination.frame.width, y: 0, width: destination.frame.width, height: destination.frame.height)
@@ -46,7 +46,7 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
         multiplier = -multiplier
         let originNewFrame = CGRect(x: multiplier * origin.frame.width, y: 0, width: origin.frame.width, height: origin.frame.height)
         
-        UIView.animateWithDuration(transitionDuration(transitionContext), animations: { () -> Void in
+        UIView.animate(withDuration: transitionDuration(using: transitionContext), animations: { () -> Void in
             destination.frame = CGRect(x: 0, y: 0, width: self.viewSize.width, height: self.viewSize.height)
             origin.frame = originNewFrame
         }, completion: { (_) -> Void in
@@ -60,7 +60,7 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
      - parameter transitionContext: The context object containing information to use during the transition.
      - returns: The duration, in seconds, of your custom transition animation.
      */
-    func transitionDuration(transitionContext: UIViewControllerContextTransitioning?) -> NSTimeInterval {
+    func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.3
     }
 }

@@ -50,7 +50,7 @@ struct BetaScheme: ColorScheme {
     }
     
     func getRecessiveColor() -> UIColor {
-        return UIColor.lightGrayColor()
+        return UIColor.lightGray
     }
     
     func getTintColor() -> UIColor {
@@ -58,6 +58,6 @@ struct BetaScheme: ColorScheme {
     }
     
     func getFontColor() -> UIColor {
-        return UIColor.whiteColor()
+        return UIColor.white
     }
 }
