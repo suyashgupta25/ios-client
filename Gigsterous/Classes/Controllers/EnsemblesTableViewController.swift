@@ -22,7 +22,7 @@ class EnsemblesTableViewController: UITableViewController {
         
         self.customRefreshControl = UIRefreshControl()
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
-        self.customRefreshControl.addTarget(self, action: #selector(EnsemblesTableViewController.refreshControlPulled), forControlEvents: UIControlEvents.ValueChanged)
+        self.customRefreshControl.addTarget(self, action: #selector(EnsemblesTableViewController.refreshControlPulled), for: UIControlEvents.valueChanged)
         self.tableView.addSubview(customRefreshControl)
     }
 
@@ -57,22 +57,22 @@ class EnsemblesTableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    override func numberOfSections(in: UITableView) -> Int {
         return 1
     }
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 0
     }
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ensembleCell", forIndexPath: indexPath)
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "ensembleCell", for: indexPath as IndexPath)
         
         // Cell setup
         
         cell.preservesSuperviewLayoutMargins = false
-        cell.separatorInset = UIEdgeInsetsZero
-        cell.layoutMargins = UIEdgeInsetsZero
+        cell.separatorInset = UIEdgeInsets.zero
+        cell.layoutMargins = UIEdgeInsets.zero
         
         return cell
     }
