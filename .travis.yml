@@ -7,8 +7,8 @@ branches:
     - master
 
 env:
-  - ACTION=test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=9.0'
-  - ACTION=test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=10.0'
+  - ACTION=build PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=9.0'
+  - ACTION=build PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=10.0'
 
 before_script:
   - export LANG=en_US.UTF-8
@@ -22,5 +22,5 @@ before_install:
 
 script:
   - set -o pipefail
-  - xcodebuild -workspace Gigsterous.xcworkspace -scheme Gigsterous clean build -destination "$DESTINATION" $ACTION | xcpretty -c
+  - xcodebuild -workspace Gigsterous.xcworkspace -scheme Gigsterous -destination "$DESTINATION" $ACTION | xcpretty -c
   - swiftlint
