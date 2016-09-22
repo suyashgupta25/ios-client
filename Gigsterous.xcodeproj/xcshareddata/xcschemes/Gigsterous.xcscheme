@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C49518CEC1F3C4003F4CCDFD58AE4667"
+               BuildableName = "ObjectMapper.framework"
+               BlueprintName = "ObjectMapper"
+               ReferencedContainer = "container:Pods/Pods.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "819D98B2274D0D02398DA2FD14346272"
                BuildableName = "OHHTTPStubs.framework"
                BlueprintName = "OHHTTPStubs"
@@ -42,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5FD29A42DB986B65DB70526D82165A4A"
+               BlueprintIdentifier = "6D9991C8790713B72EF00FCFB81B87F0"
                BuildableName = "Pods_Gigsterous.framework"
                BlueprintName = "Pods-Gigsterous"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
