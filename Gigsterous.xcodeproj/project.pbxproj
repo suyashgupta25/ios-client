@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7E8FEA6C61BC9419753421FE /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A47F8AD2F1FD6DA7493C4D /* Pods_Gigsterous.framework */; };
+		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
+		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
+		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
+		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
+		C12FA0F41D93A22E005A056D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
+		C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
+		C12FA0FC1D93A26A005A056D /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
+		C12FA0FD1D93A26A005A056D /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
 		C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */; };
 		C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9251D64937C005AAF2F /* EventsTableViewController.swift */; };
 		C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */; };
@@ -48,6 +56,13 @@
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2558DC988360BCB84685F118 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
 		A1EA10C91F6B6F06E48C1988 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
+		C12FA0EE1D93A224005A056D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		C12FA0EF1D93A224005A056D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
+		C12FA0F31D93A22E005A056D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Networking/Client.swift; sourceTree = "<group>"; };
+		C12FA0F81D93A26A005A056D /* ensembles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ensembles.json; sourceTree = "<group>"; };
+		C12FA0F91D93A26A005A056D /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		C12FA0FA1D93A26A005A056D /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewController.swift; path = Gigsterous/Classes/Controllers/EnsemblesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		C152E9251D64937C005AAF2F /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditionsTableViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				C1F0F4351D24249C004124E2 /* AppDelegate.swift */,
+				C12FA0EB1D93A200005A056D /* Model */,
+				C12FA0EC1D93A206005A056D /* Networking */,
 				C152E92B1D6493CF005AAF2F /* Controllers */,
 				C152E9311D64A143005AAF2F /* Helpers */,
 			);
@@ -138,6 +155,34 @@
 				C18B7A8D1D6DBE520032E357 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C12FA0EB1D93A200005A056D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
+				C12FA0EE1D93A224005A056D /* Event.swift */,
+				C12FA0EF1D93A224005A056D /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C12FA0EC1D93A206005A056D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0F31D93A22E005A056D /* Client.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		C12FA0F71D93A256005A056D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0F81D93A26A005A056D /* ensembles.json */,
+				C12FA0F91D93A26A005A056D /* events.json */,
+				C12FA0FA1D93A26A005A056D /* people.json */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		C152E92B1D6493CF005AAF2F /* Controllers */ = {
@@ -184,6 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				C1F0F44E1D24249C004124E2 /* Info.plist */,
+				C12FA0F71D93A256005A056D /* Responses */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -377,6 +423,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
+				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
+				C12FA0FD1D93A26A005A056D /* people.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,17 +491,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */,
 				C152E9301D649E28005AAF2F /* TabBarSlidingTransition.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
+				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
+				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
+				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C11D16DE1D94249F000C874E /* Client.swift in Sources */,
 				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
