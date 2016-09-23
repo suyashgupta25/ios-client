@@ -18,7 +18,9 @@ protocol Client {
     /// - Parameter people: List of parsed Person objects.
     /// - Parameter failure: Closure that is called after a failed download.
     /// - Parameter error: Error containing information what went wrong.
-    func people(handler: (_ people: [Person]) -> Void, failure: (_ error: NSError) -> Void)
+    func people(_
+        handler: @escaping (_ people: [Person]) -> Void,
+        failure: @escaping (_ error: NSError) -> Void)
     
     /// Downloads list of ensembles.
     ///
@@ -26,7 +28,9 @@ protocol Client {
     /// - Parameter ensembles: List of parsed Ensemble objects.
     /// - Parameter failure: Closure that is called after a failed download.
     /// - Parameter error: Error containing information what went wrong.
-    func ensembles(handler: (_ ensembles: [Ensemble]) -> Void, failure: (_ error: NSError) -> Void)
+    func ensembles(_
+        handler: @escaping (_ ensembles: [Ensemble]) -> Void,
+        failure: @escaping (_ error: NSError) -> Void)
     
     /// Downloads list of events.
     ///
@@ -34,5 +38,7 @@ protocol Client {
     /// - Parameter events: List of parsed Event objects.
     /// - Parameter failure: Closure that is called after a failed download.
     /// - Parameter error: Error containing information what went wrong.
-    func events(handler: (_ events: [Event]) -> Void, failure: (_ error: NSError) -> Void)
+    func events(_
+        handler: @escaping (_ events: [Event]) -> Void,
+        failure: @escaping (_ error: NSError) -> Void)
 }

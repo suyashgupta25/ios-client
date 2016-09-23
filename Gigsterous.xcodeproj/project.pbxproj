@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7E8FEA6C61BC9419753421FE /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2A47F8AD2F1FD6DA7493C4D /* Pods_Gigsterous.framework */; };
 		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
+		C11D16E01D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
+		C11D16E11D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
+		C11D16E31D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
+		C11D16E41D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
 		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
 		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
 		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
@@ -33,6 +36,19 @@
 		C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4401D24249C004124E2 /* LaunchScreen.storyboard */; };
 		C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */; };
 		C1F0F4581D24249C004124E2 /* GigsterousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */; };
+		C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
+		C1FD6BDD1D94348900E11288 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
+		C1FD6BDE1D94348900E11288 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
+		C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
+		C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
+		C1FD6BE31D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
+		C1FD6BE41D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
+		C1FD6BE51D9482F500E11288 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
+		C1FD6BE61D9482F800E11288 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
+		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
+		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
+		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
+		F3793BDE734F404D5E9A81C0 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +70,10 @@
 
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2558DC988360BCB84685F118 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		A1EA10C91F6B6F06E48C1988 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
+		97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C11D16DF1D942D33000C874E /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
+		C11D16E21D94325D000C874E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
 		C12FA0EE1D93A224005A056D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
 		C12FA0EF1D93A224005A056D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
@@ -86,7 +104,10 @@
 		C1F0F4531D24249C004124E2 /* GigsterousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousUITests.swift; sourceTree = "<group>"; };
 		C1F0F4591D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2A47F8AD2F1FD6DA7493C4D /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
+		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
+		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
+		F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E8FEA6C61BC9419753421FE /* Pods_Gigsterous.framework in Frameworks */,
+				F3793BDE734F404D5E9A81C0 /* Pods_Gigsterous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,18 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				12C13A8988E6893739DB0B53 /* Pods.framework */,
-				E2A47F8AD2F1FD6DA7493C4D /* Pods_Gigsterous.framework */,
+				97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		46BCCA1C99BC1364DD3892D1 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A1EA10C91F6B6F06E48C1988 /* Pods-Gigsterous.debug.xcconfig */,
-				2558DC988360BCB84685F118 /* Pods-Gigsterous.release.xcconfig */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		C10212621D6D9CF40045C3A9 /* Classes */ = {
@@ -160,9 +172,10 @@
 		C12FA0EB1D93A200005A056D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C12FA0EF1D93A224005A056D /* Person.swift */,
+				C1FD6BE81D95051000E11288 /* Skill.swift */,
 				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
 				C12FA0EE1D93A224005A056D /* Event.swift */,
-				C12FA0EF1D93A224005A056D /* Person.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -171,6 +184,8 @@
 			isa = PBXGroup;
 			children = (
 				C12FA0F31D93A22E005A056D /* Client.swift */,
+				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
+				C1FD6BE21D9436EC00E11288 /* API.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -211,6 +226,7 @@
 		C152E9311D64A143005AAF2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C11D16E21D94325D000C874E /* Constants.swift */,
 				C152E9361D64A84A005AAF2F /* ColorSchemes.swift */,
 				C152E9381D64C7D7005AAF2F /* UIColorExtension.swift */,
 			);
@@ -220,6 +236,7 @@
 		C1AF4BDE1D918CA600516BC7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C11D16DF1D942D33000C874E /* ClientMock.swift */,
 				C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */,
 			);
 			path = Classes;
@@ -258,7 +275,7 @@
 				C1F0F4561D24249C004124E2 /* GigsterousUITests */,
 				C1F0F4331D24249C004124E2 /* Products */,
 				1C6B135251882588CF3CE799 /* Frameworks */,
-				46BCCA1C99BC1364DD3892D1 /* Pods */,
+				D98D81981CD1499201CE991C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -299,6 +316,15 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
+		D98D81981CD1499201CE991C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */,
+				1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -306,12 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F0F45C1D24249C004124E2 /* Build configuration list for PBXNativeTarget "Gigsterous" */;
 			buildPhases = (
-				4EFE5700A2B236D0693C0389 /* [CP] Check Pods Manifest.lock */,
+				F11A2C83976CB1DF78E86241 /* [CP] Check Pods Manifest.lock */,
 				C1F0F42E1D24249C004124E2 /* Sources */,
 				C1F0F42F1D24249C004124E2 /* Frameworks */,
 				C1F0F4301D24249C004124E2 /* Resources */,
-				A2367ECA361972D373AFF8E7 /* [CP] Embed Pods Frameworks */,
-				A34D2C3E7E7EF98E0DCD128C /* [CP] Copy Pods Resources */,
+				D14B4E4C54C8F719A8A45A36 /* [CP] Embed Pods Frameworks */,
+				4545F077B67C47F21F16E8C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -413,8 +439,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */,
+				C1FD6BE51D9482F500E11288 /* people.json in Resources */,
+				C1FD6BE61D9482F800E11288 /* events.json in Resources */,
 				C18B7A8E1D6DBE520032E357 /* Localizable.strings in Resources */,
 				C1F0F43F1D24249C004124E2 /* Assets.xcassets in Resources */,
+				C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */,
 				C1F0F43D1D24249C004124E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -439,37 +468,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4EFE5700A2B236D0693C0389 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A2367ECA361972D373AFF8E7 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A34D2C3E7E7EF98E0DCD128C /* [CP] Copy Pods Resources */ = {
+		4545F077B67C47F21F16E8C0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -484,6 +483,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D14B4E4C54C8F719A8A45A36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F11A2C83976CB1DF78E86241 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -492,18 +521,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */,
+				C11D16E31D94325D000C874E /* Constants.swift in Sources */,
 				C152E9301D649E28005AAF2F /* TabBarSlidingTransition.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
+				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
 				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
 				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
+				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
+				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
+				C1FD6BE91D95051000E11288 /* Skill.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
 				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
 			);
@@ -513,8 +547,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */,
+				C1FD6BE41D9436EC00E11288 /* API.swift in Sources */,
 				C11D16DE1D94249F000C874E /* Client.swift in Sources */,
 				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
+				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
+				C11D16E11D942D33000C874E /* ClientMock.swift in Sources */,
+				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
+				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
+				C1FD6BDD1D94348900E11288 /* Event.swift in Sources */,
+				C11D16E41D94325D000C874E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,7 +699,7 @@
 		};
 		C1F0F45D1D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1EA10C91F6B6F06E48C1988 /* Pods-Gigsterous.debug.xcconfig */;
+			baseConfigurationReference = F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -672,7 +714,7 @@
 		};
 		C1F0F45E1D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2558DC988360BCB84685F118 /* Pods-Gigsterous.release.xcconfig */;
+			baseConfigurationReference = 1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
