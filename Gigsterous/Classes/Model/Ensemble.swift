@@ -1,19 +1,20 @@
 //
-//  Event.swift
+//  Ensemble.swift
 //  Gigsterous
 //
 //  Created by Svacha, Michal on 21/09/16.
 //  Copyright © 2016 Svacha, Michal. All rights reserved.
 //
 
+/// Model class representing an ensemble.
 import Foundation
 import ObjectMapper
 
-/// Model class representing an event.
-class Event: Mappable {
+/// Model class representing an ensemble.
+class Ensemble: Mappable {
     var id: String!
-    var venue: String!
-    var date: String!
+    var name: String!
+    var ensembleType: String!
     var people: [Person]!
     
     required init?(map: Map) {
@@ -22,8 +23,8 @@ class Event: Mappable {
     
     func mapping(map: Map) {
         id <- map["id"]
-        venue <- map["venue"]
-        date <- map["date"]
+        name <- map["name"]
+        ensembleType <- map["ensembleType"]
         people <- map["people"]
     }
 }
