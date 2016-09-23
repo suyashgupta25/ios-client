@@ -1,5 +1,11 @@
 PODS:
+  - Alamofire (4.0.0)
   - MBProgressHUD (0.9.2)
+  - Moya (8.0.0-beta.2):
+    - Moya/Core (= 8.0.0-beta.2)
+  - Moya/Core (8.0.0-beta.2):
+    - Alamofire (~> 4.0.0)
+    - Result
   - ObjectMapper (2.0.0)
   - OHHTTPStubs (5.2.1):
     - OHHTTPStubs/Default (= 5.2.1)
@@ -16,18 +22,23 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (5.2.1)
   - OHHTTPStubs/Swift (5.2.1):
     - OHHTTPStubs/Core
+  - Result (3.0.0)
 
 DEPENDENCIES:
   - MBProgressHUD (~> 0.9.1)
+  - Moya (= 8.0.0-beta.2)
   - ObjectMapper (~> 2.0)
   - OHHTTPStubs
   - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  Moya: 920d40f738e6f4ece84010cec701bb9693be8251
   ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
   OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
+  Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
 
-PODFILE CHECKSUM: 1a8df119d4b138790687a8a33c4cbcd98821421d
+PODFILE CHECKSUM: 613ab19617d962866b476d8b8ff7e70fa54e0b2b
 
 COCOAPODS: 1.1.0.rc.2
