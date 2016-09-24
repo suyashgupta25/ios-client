@@ -13,6 +13,7 @@ import UIKit
  */
 class EventsTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
+    var events: [Event] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,10 @@ class EventsTableViewController: UITableViewController {
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
         self.customRefreshControl.addTarget(self, action: #selector(EventsTableViewController.refreshControlPulled), for: UIControlEvents.valueChanged)
         self.tableView.addSubview(customRefreshControl)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.refreshData(success: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,8 +56,14 @@ class EventsTableViewController: UITableViewController {
      - parameter success: Optional closure performed after loading has been performed.
      */
     func refreshData(success: (() -> Void)?) {
-        // Data loading and setting
-        success?()
+        ClientMock.sharedInstance.events({ (events: [Event]) in
+            self.events = events
+            self.tableView.reloadData()
+            success?()
+        }) { (error: NSError) in
+            print("doh")
+            success?()
+        }
     }
 
     // MARK: - Table view data source
@@ -62,13 +73,24 @@ class EventsTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.events.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "eventCell", for: indexPath as IndexPath)
+        let eventData = self.events[indexPath.row]
         
-        // Cell setup
+        if let header = cell.viewWithTag(1) as? UILabel {
+            header.text = String(eventData.id)
+        }
+        
+        if let venue = cell.viewWithTag(2) as? UILabel {
+            venue.text = eventData.venue
+        }
+        
+        if let date = cell.viewWithTag(3) as? UILabel {
+            date.text = eventData.date
+        }
         
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero

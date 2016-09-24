@@ -13,6 +13,7 @@ import UIKit
  */
 class EnsemblesTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
+    var ensembles: [Ensemble] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,6 +25,10 @@ class EnsemblesTableViewController: UITableViewController {
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
         self.customRefreshControl.addTarget(self, action: #selector(EnsemblesTableViewController.refreshControlPulled), for: UIControlEvents.valueChanged)
         self.tableView.addSubview(customRefreshControl)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.refreshData(success: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,8 +56,14 @@ class EnsemblesTableViewController: UITableViewController {
      - parameter success: Optional closure performed after loading has been performed.
      */
     func refreshData(success: (() -> Void)?) {
-        // Data loading and setting
-        success?()
+        ClientMock.sharedInstance.ensembles({ (ensembles: [Ensemble]) in
+            self.ensembles = ensembles
+            self.tableView.reloadData()
+            success?()
+        }) { (error: NSError) in
+            print("doh")
+            success?()
+        }
     }
 
     // MARK: - Table view data source
@@ -62,13 +73,24 @@ class EnsemblesTableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return self.ensembles.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ensembleCell", for: indexPath as IndexPath)
+        let ensembleData = self.ensembles[indexPath.row]
         
-        // Cell setup
+        if let name = cell.viewWithTag(1) as? UILabel {
+            name.text = String(ensembleData.name)
+        }
+        
+        if let ensembleType = cell.viewWithTag(2) as? UILabel {
+            ensembleType.text = ensembleData.ensembleType
+        }
+        
+        if let musicians = cell.viewWithTag(3) as? UILabel {
+            musicians.text = "\(ensembleData.people.count) musicians"
+        }
         
         cell.preservesSuperviewLayoutMargins = false
         cell.separatorInset = UIEdgeInsets.zero

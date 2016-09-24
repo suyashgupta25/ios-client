@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FD27A8D8D3C33457808F58F /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */; };
 		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
 		C11D16E01D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
 		C11D16E11D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
@@ -48,7 +49,6 @@
 		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
-		F3793BDE734F404D5E9A81C0 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +70,9 @@
 
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
+		BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
 		C11D16DF1D942D33000C874E /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
 		C11D16E21D94325D000C874E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
@@ -107,7 +108,6 @@
 		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
 		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
-		F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3793BDE734F404D5E9A81C0 /* Pods_Gigsterous.framework in Frameworks */,
+				9FD27A8D8D3C33457808F58F /* Pods_Gigsterous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,9 +140,18 @@
 			isa = PBXGroup;
 			children = (
 				12C13A8988E6893739DB0B53 /* Pods.framework */,
-				97B49CB969AD390A4E1B7A44 /* Pods_Gigsterous.framework */,
+				4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B78F3FCF7D75FF80B476BD09 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */,
+				7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		C10212621D6D9CF40045C3A9 /* Classes */ = {
@@ -275,7 +284,7 @@
 				C1F0F4561D24249C004124E2 /* GigsterousUITests */,
 				C1F0F4331D24249C004124E2 /* Products */,
 				1C6B135251882588CF3CE799 /* Frameworks */,
-				D98D81981CD1499201CE991C /* Pods */,
+				B78F3FCF7D75FF80B476BD09 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -316,15 +325,6 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
-		D98D81981CD1499201CE991C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */,
-				1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,12 +332,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F0F45C1D24249C004124E2 /* Build configuration list for PBXNativeTarget "Gigsterous" */;
 			buildPhases = (
-				F11A2C83976CB1DF78E86241 /* [CP] Check Pods Manifest.lock */,
+				1D2E3E374EB57E29335CA1D7 /* [CP] Check Pods Manifest.lock */,
 				C1F0F42E1D24249C004124E2 /* Sources */,
 				C1F0F42F1D24249C004124E2 /* Frameworks */,
 				C1F0F4301D24249C004124E2 /* Resources */,
-				D14B4E4C54C8F719A8A45A36 /* [CP] Embed Pods Frameworks */,
-				4545F077B67C47F21F16E8C0 /* [CP] Copy Pods Resources */,
+				A96EE90B4954FCEE4189D40E /* [CP] Embed Pods Frameworks */,
+				247223D581D4C90B541BAB1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -396,18 +396,18 @@
 				TargetAttributes = {
 					C1F0F4311D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = N6F5M25XP2;
+						DevelopmentTeam = 584XPHFEML;
 						LastSwiftMigration = 0800;
 					};
 					C1F0F4471D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = N6F5M25XP2;
+						DevelopmentTeam = 584XPHFEML;
 						LastSwiftMigration = 0800;
 						TestTargetID = C1F0F4311D24249C004124E2;
 					};
 					C1F0F4521D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = N6F5M25XP2;
+						DevelopmentTeam = 584XPHFEML;
 						LastSwiftMigration = 0800;
 						TestTargetID = C1F0F4311D24249C004124E2;
 					};
@@ -468,7 +468,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4545F077B67C47F21F16E8C0 /* [CP] Copy Pods Resources */ = {
+		1D2E3E374EB57E29335CA1D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		247223D581D4C90B541BAB1F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -483,7 +498,7 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D14B4E4C54C8F719A8A45A36 /* [CP] Embed Pods Frameworks */ = {
+		A96EE90B4954FCEE4189D40E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -496,21 +511,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F11A2C83976CB1DF78E86241 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -623,11 +623,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = N6F5M25XP2;
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -673,11 +673,11 @@
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = N6F5M25XP2;
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -699,10 +699,12 @@
 		};
 		C1F0F45D1D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F9DEDCD082BC26A8229A4696 /* Pods-Gigsterous.debug.xcconfig */;
+			baseConfigurationReference = BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -714,10 +716,12 @@
 		};
 		C1F0F45E1D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1DC4D70C3DB91A98B370B3D5 /* Pods-Gigsterous.release.xcconfig */;
+			baseConfigurationReference = 7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -731,6 +735,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -745,6 +751,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -758,6 +766,8 @@
 		C1F0F4631D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -771,6 +781,8 @@
 		C1F0F4641D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
