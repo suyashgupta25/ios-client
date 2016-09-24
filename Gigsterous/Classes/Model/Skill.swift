@@ -6,12 +6,12 @@
 //  Copyright © 2016 Svacha, Michal. All rights reserved.
 //
 
-/// Model class representing a skill.
 import Foundation
 import ObjectMapper
 
+/// Model class representing a skill.
 class Skill: Mappable {
-    var id: String!
+    var id: Int!
     var instrument: String!
     var level: String!
     

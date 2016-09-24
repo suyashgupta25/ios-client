@@ -6,13 +6,12 @@
 //  Copyright © 2016 Svacha, Michal. All rights reserved.
 //
 
-/// Model class representing an ensemble.
 import Foundation
 import ObjectMapper
 
 /// Model class representing an ensemble.
 class Ensemble: Mappable {
-    var id: String!
+    var id: Int!
     var name: String!
     var ensembleType: String!
     var people: [Person]!

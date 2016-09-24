@@ -11,7 +11,7 @@ import ObjectMapper
 
 /// Model class representing an event.
 class Event: Mappable {
-    var id: String!
+    var id: Int!
     var venue: String!
     var date: String!
     var people: [Person]!
