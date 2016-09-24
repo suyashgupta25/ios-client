@@ -10,6 +10,7 @@ import Foundation
 import Moya
 import ObjectMapper
 
+/// Implementation of the Client protocol using Moya framework.
 class ClientMoya: Client {
     static let sharedInstance: ClientMoya = ClientMoya()
     

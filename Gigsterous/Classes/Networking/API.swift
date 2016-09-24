@@ -10,6 +10,7 @@ import Foundation
 import Moya
 import Alamofire
 
+/// Endpoint specification
 enum API {
     case People()
     case Ensembles()
