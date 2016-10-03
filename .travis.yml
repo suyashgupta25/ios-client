@@ -15,7 +15,7 @@ before_script:
 
 before_install:
   - rvm install ruby-2.2.2
-  - gem install cocoapods
+  - gem install cocoapods --pre
   - gem install xcpretty -N
   - brew update
   - brew install swiftlint || true
