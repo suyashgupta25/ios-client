@@ -3,5 +3,8 @@ use_frameworks!
 
 target "Gigsterous" do
 	pod 'MBProgressHUD', '~> 0.9.1'
+	pod 'OHHTTPStubs'
+	pod 'OHHTTPStubs/Swift'
+	pod 'ObjectMapper', '~> 2.0'
+	pod 'Moya', '8.0.0-beta.2'
 end
-
