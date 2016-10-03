@@ -81,7 +81,7 @@ class EventsTableViewController: UITableViewController {
         let eventData = self.events[indexPath.row]
         
         if let header = cell.viewWithTag(1) as? UILabel {
-            header.text = String(eventData.id)
+            header.text = String(eventData.name)
         }
         
         if let venue = cell.viewWithTag(2) as? UILabel {
@@ -89,7 +89,9 @@ class EventsTableViewController: UITableViewController {
         }
         
         if let date = cell.viewWithTag(3) as? UILabel {
-            date.text = eventData.date
+            let dateFormatter = DateFormatter()
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
+            date.text = dateFormatter.string(from: eventData.date)
         }
         
         cell.preservesSuperviewLayoutMargins = false
