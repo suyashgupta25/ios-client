@@ -17,8 +17,8 @@ class NavigationViewController: UINavigationController {
         super.viewDidLoad()
         
         // Style setting
-        self.navigationBar.barStyle = .Black
-        self.navigationBar.translucent = false
+        self.navigationBar.barStyle = .black
+        self.navigationBar.isTranslucent = false
         self.navigationBar.barTintColor = ColorSchemes.activeColorScheme.getDominantColor()
         self.navigationBar.tintColor = ColorSchemes.activeColorScheme.getFontColor()
         self.navigationBar.titleTextAttributes = [

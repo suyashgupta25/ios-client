@@ -7,7 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		336C61273DF7D0D7A1009E20 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */; };
+		9FD27A8D8D3C33457808F58F /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */; };
+		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
+		C11D16E01D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
+		C11D16E11D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
+		C11D16E31D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
+		C11D16E41D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
+		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
+		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
+		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
+		C12FA0F41D93A22E005A056D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
+		C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
+		C12FA0FC1D93A26A005A056D /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
+		C12FA0FD1D93A26A005A056D /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
 		C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */; };
 		C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9251D64937C005AAF2F /* EventsTableViewController.swift */; };
 		C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */; };
@@ -25,6 +37,19 @@
 		C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4401D24249C004124E2 /* LaunchScreen.storyboard */; };
 		C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */; };
 		C1F0F4581D24249C004124E2 /* GigsterousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */; };
+		C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
+		C1FD6BDD1D94348900E11288 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
+		C1FD6BDE1D94348900E11288 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
+		C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
+		C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
+		C1FD6BE31D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
+		C1FD6BE41D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
+		C1FD6BE51D9482F500E11288 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
+		C1FD6BE61D9482F800E11288 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
+		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
+		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
+		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
+		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +71,18 @@
 
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
+		BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		C11D16DF1D942D33000C874E /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
+		C11D16E21D94325D000C874E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
+		C12FA0EE1D93A224005A056D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
+		C12FA0EF1D93A224005A056D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
+		C12FA0F31D93A22E005A056D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Networking/Client.swift; sourceTree = "<group>"; };
+		C12FA0F81D93A26A005A056D /* ensembles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ensembles.json; sourceTree = "<group>"; };
+		C12FA0F91D93A26A005A056D /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
+		C12FA0FA1D93A26A005A056D /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
 		C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewController.swift; path = Gigsterous/Classes/Controllers/EnsemblesTableViewController.swift; sourceTree = SOURCE_ROOT; };
 		C152E9251D64937C005AAF2F /* EventsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventsTableViewController.swift; sourceTree = "<group>"; };
 		C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuditionsTableViewController.swift; sourceTree = "<group>"; };
@@ -70,8 +106,10 @@
 		C1F0F4531D24249C004124E2 /* GigsterousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousUITests.swift; sourceTree = "<group>"; };
 		C1F0F4591D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
+		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
+		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
+		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				336C61273DF7D0D7A1009E20 /* Pods_Gigsterous.framework in Frameworks */,
+				9FD27A8D8D3C33457808F58F /* Pods_Gigsterous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,16 +142,16 @@
 			isa = PBXGroup;
 			children = (
 				12C13A8988E6893739DB0B53 /* Pods.framework */,
-				F0F53CD2D708B3C63F66D9B5 /* Pods_Gigsterous.framework */,
+				4F43A1CAAE1FB93F971E9E05 /* Pods_Gigsterous.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		38CDB4CC56FBA2AF5CC75424 /* Pods */ = {
+		B78F3FCF7D75FF80B476BD09 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */,
-				EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */,
+				BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */,
+				7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -122,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				C1F0F4351D24249C004124E2 /* AppDelegate.swift */,
+				C12FA0EB1D93A200005A056D /* Model */,
+				C12FA0EC1D93A206005A056D /* Networking */,
 				C152E92B1D6493CF005AAF2F /* Controllers */,
 				C152E9311D64A143005AAF2F /* Helpers */,
 			);
@@ -138,6 +178,38 @@
 				C18B7A8D1D6DBE520032E357 /* Localizable.strings */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		C12FA0EB1D93A200005A056D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E00B93271DA2B49600A77A08 /* DateStringTransform.swift */,
+				C12FA0EF1D93A224005A056D /* Person.swift */,
+				C1FD6BE81D95051000E11288 /* Skill.swift */,
+				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
+				C12FA0EE1D93A224005A056D /* Event.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C12FA0EC1D93A206005A056D /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0F31D93A22E005A056D /* Client.swift */,
+				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
+				C1FD6BE21D9436EC00E11288 /* API.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		C12FA0F71D93A256005A056D /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0F81D93A26A005A056D /* ensembles.json */,
+				C12FA0F91D93A26A005A056D /* events.json */,
+				C12FA0FA1D93A26A005A056D /* people.json */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		C152E92B1D6493CF005AAF2F /* Controllers */ = {
@@ -166,10 +238,45 @@
 		C152E9311D64A143005AAF2F /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				C11D16E21D94325D000C874E /* Constants.swift */,
 				C152E9361D64A84A005AAF2F /* ColorSchemes.swift */,
 				C152E9381D64C7D7005AAF2F /* UIColorExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C1AF4BDE1D918CA600516BC7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C11D16DF1D942D33000C874E /* ClientMock.swift */,
+				C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1AF4BDF1D918CAE00516BC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1F0F44E1D24249C004124E2 /* Info.plist */,
+				C12FA0F71D93A256005A056D /* Responses */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C1AF4BE01D918CFF00516BC7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		C1AF4BE11D918D0400516BC7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1F0F4591D24249C004124E2 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		C1F0F4291D24249C004124E2 = {
@@ -180,7 +287,7 @@
 				C1F0F4561D24249C004124E2 /* GigsterousUITests */,
 				C1F0F4331D24249C004124E2 /* Products */,
 				1C6B135251882588CF3CE799 /* Frameworks */,
-				38CDB4CC56FBA2AF5CC75424 /* Pods */,
+				B78F3FCF7D75FF80B476BD09 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,8 +313,8 @@
 		C1F0F44B1D24249C004124E2 /* GigsterousTests */ = {
 			isa = PBXGroup;
 			children = (
-				C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */,
-				C1F0F44E1D24249C004124E2 /* Info.plist */,
+				C1AF4BDE1D918CA600516BC7 /* Classes */,
+				C1AF4BDF1D918CAE00516BC7 /* Resources */,
 			);
 			path = GigsterousTests;
 			sourceTree = "<group>";
@@ -215,8 +322,8 @@
 		C1F0F4561D24249C004124E2 /* GigsterousUITests */ = {
 			isa = PBXGroup;
 			children = (
-				C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */,
-				C1F0F4591D24249C004124E2 /* Info.plist */,
+				C1AF4BE01D918CFF00516BC7 /* Classes */,
+				C1AF4BE11D918D0400516BC7 /* Resources */,
 			);
 			path = GigsterousUITests;
 			sourceTree = "<group>";
@@ -228,12 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F0F45C1D24249C004124E2 /* Build configuration list for PBXNativeTarget "Gigsterous" */;
 			buildPhases = (
-				4B5A6E74A6618F8EB472FBFD /* [CP] Check Pods Manifest.lock */,
+				1D2E3E374EB57E29335CA1D7 /* [CP] Check Pods Manifest.lock */,
 				C1F0F42E1D24249C004124E2 /* Sources */,
 				C1F0F42F1D24249C004124E2 /* Frameworks */,
 				C1F0F4301D24249C004124E2 /* Resources */,
-				1F1A370C5B8283F0141A5F18 /* [CP] Embed Pods Frameworks */,
-				BCE25DC55F645798E88E93F3 /* [CP] Copy Pods Resources */,
+				A96EE90B4954FCEE4189D40E /* [CP] Embed Pods Frameworks */,
+				247223D581D4C90B541BAB1F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -287,18 +394,24 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Svacha, Michal";
 				TargetAttributes = {
 					C1F0F4311D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 584XPHFEML;
+						LastSwiftMigration = 0800;
 					};
 					C1F0F4471D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 584XPHFEML;
+						LastSwiftMigration = 0800;
 						TestTargetID = C1F0F4311D24249C004124E2;
 					};
 					C1F0F4521D24249C004124E2 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 584XPHFEML;
+						LastSwiftMigration = 0800;
 						TestTargetID = C1F0F4311D24249C004124E2;
 					};
 				};
@@ -329,8 +442,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */,
+				C1FD6BE51D9482F500E11288 /* people.json in Resources */,
+				C1FD6BE61D9482F800E11288 /* events.json in Resources */,
 				C18B7A8E1D6DBE520032E357 /* Localizable.strings in Resources */,
 				C1F0F43F1D24249C004124E2 /* Assets.xcassets in Resources */,
+				C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */,
 				C1F0F43D1D24249C004124E2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +455,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
+				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
+				C12FA0FD1D93A26A005A056D /* people.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,22 +471,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1F1A370C5B8283F0141A5F18 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4B5A6E74A6618F8EB472FBFD /* [CP] Check Pods Manifest.lock */ = {
+		1D2E3E374EB57E29335CA1D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -379,10 +483,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BCE25DC55F645798E88E93F3 /* [CP] Copy Pods Resources */ = {
+		247223D581D4C90B541BAB1F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -397,6 +501,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A96EE90B4954FCEE4189D40E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -404,17 +523,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */,
+				C11D16E31D94325D000C874E /* Constants.swift in Sources */,
 				C152E9301D649E28005AAF2F /* TabBarSlidingTransition.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
+				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
+				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
+				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
+				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
+				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
+				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
+				C1FD6BE91D95051000E11288 /* Skill.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
+				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +551,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */,
+				C1FD6BE41D9436EC00E11288 /* API.swift in Sources */,
+				C11D16DE1D94249F000C874E /* Client.swift in Sources */,
 				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
+				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
+				C11D16E11D942D33000C874E /* ClientMock.swift in Sources */,
+				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
+				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
+				C1FD6BDD1D94348900E11288 /* Event.swift in Sources */,
+				C11D16E41D94325D000C874E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,13 +621,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -529,13 +671,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -549,6 +695,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -556,27 +703,35 @@
 		};
 		C1F0F45D1D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF31B5C5191A8582E6B3888F /* Pods-Gigsterous.debug.xcconfig */;
+			baseConfigurationReference = BE85348138D0E20FB1039D08 /* Pods-Gigsterous.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.Gigsterous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		C1F0F45E1D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EAD29A55A57DB7E875755602 /* Pods-Gigsterous.release.xcconfig */;
+			baseConfigurationReference = 7CF5C653EAE2B4112278F167 /* Pods-Gigsterous.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.Gigsterous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -584,11 +739,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gigsterous.app/Gigsterous";
 			};
 			name = Debug;
@@ -597,11 +755,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Gigsterous.app/Gigsterous";
 			};
 			name = Release;
@@ -609,11 +770,14 @@
 		C1F0F4631D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Gigsterous;
 			};
 			name = Debug;
@@ -621,11 +785,14 @@
 		C1F0F4641D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = Gigsterous;
 			};
 			name = Release;

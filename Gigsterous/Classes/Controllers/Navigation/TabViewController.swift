@@ -18,7 +18,7 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
         self.delegate = self
         
         // Style setting
-        UITabBar.appearance().translucent = false
+        UITabBar.appearance().isTranslucent = false
         UITabBar.appearance().barTintColor = ColorSchemes.activeColorScheme.getDominantColor()
         UITabBar.appearance().tintColor = ColorSchemes.activeColorScheme.getTintColor()
     }
@@ -37,15 +37,15 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
      - parameter toVC: The view controller intended to be visible after the transition ends.
      - returns: The UIViewControllerAnimatedTransitioning delegate object responsible for managing the tab bar view controller transition animation.
      */
-    func tabBarController(tabBarController: UITabBarController, animationControllerForTransitionFromViewController fromVC: UIViewController, toViewController toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+    func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         guard let viewControllers = tabBarController.viewControllers else {
             return nil
         }
         
-        let fromIndex = viewControllers.indexOf(fromVC)
-        let toIndex = viewControllers.indexOf(toVC)
-        let animatedTransitioningObject = TabBarSlidingTransition(viewSize: fromVC.view.frame.size, isScrollingLeft: toIndex > fromIndex)
+        let fromIndex = viewControllers.index(of: fromVC)
+        let toIndex = viewControllers.index(of: toVC)
+        let animatedTransitioningObject = TabBarSlidingTransition(viewSize: fromVC.view.frame.size, isScrollingLeft: toIndex! > fromIndex!)
         
         return animatedTransitioningObject
     }
