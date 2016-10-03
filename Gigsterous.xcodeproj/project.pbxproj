@@ -49,6 +49,7 @@
 		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
+		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +109,7 @@
 		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
 		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
+		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 		C12FA0EB1D93A200005A056D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				E00B93271DA2B49600A77A08 /* DateStringTransform.swift */,
 				C12FA0EF1D93A224005A056D /* Person.swift */,
 				C1FD6BE81D95051000E11288 /* Skill.swift */,
 				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
@@ -532,6 +535,7 @@
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
 				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
+				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
 				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
