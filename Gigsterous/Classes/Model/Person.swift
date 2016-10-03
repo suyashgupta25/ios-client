@@ -20,9 +20,7 @@ class Person: Mappable {
     var dateOfBirth: String!
     var skills: [Skill]!
     
-    required init?(map: Map) {
-        //
-    }
+    required init?(map: Map) {}
     
     func mapping(map: Map) {
         id <- map["id"]

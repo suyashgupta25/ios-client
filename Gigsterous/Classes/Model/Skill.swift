@@ -15,9 +15,7 @@ class Skill: Mappable {
     var instrument: String!
     var level: String!
     
-    required init?(map: Map) {
-        //
-    }
+    required init?(map: Map) {}
     
     func mapping(map: Map) {
         id <- map["id"]
