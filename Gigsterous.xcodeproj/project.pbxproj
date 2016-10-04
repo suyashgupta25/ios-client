@@ -50,6 +50,12 @@
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
+		E0963BF01DA3F0CA003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
+		E0963BF11DA3F0D0003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
+		E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
+		E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
+		E0963BF41DA3F10A003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
+		E0963BF51DA3F10C003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -257,7 +263,6 @@
 		C1AF4BDF1D918CAE00516BC7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C1F0F44E1D24249C004124E2 /* Info.plist */,
 				C12FA0F71D93A256005A056D /* Responses */,
 			);
 			path = Resources;
@@ -269,14 +274,6 @@
 				C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		C1AF4BE11D918D0400516BC7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				C1F0F4591D24249C004124E2 /* Info.plist */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		C1F0F4291D24249C004124E2 = {
@@ -313,6 +310,7 @@
 		C1F0F44B1D24249C004124E2 /* GigsterousTests */ = {
 			isa = PBXGroup;
 			children = (
+				C1F0F44E1D24249C004124E2 /* Info.plist */,
 				C1AF4BDE1D918CA600516BC7 /* Classes */,
 				C1AF4BDF1D918CAE00516BC7 /* Resources */,
 			);
@@ -322,8 +320,8 @@
 		C1F0F4561D24249C004124E2 /* GigsterousUITests */ = {
 			isa = PBXGroup;
 			children = (
+				C1F0F4591D24249C004124E2 /* Info.plist */,
 				C1AF4BE01D918CFF00516BC7 /* Classes */,
-				C1AF4BE11D918D0400516BC7 /* Resources */,
 			);
 			path = GigsterousUITests;
 			sourceTree = "<group>";
@@ -441,7 +439,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0963BF41DA3F10A003F2A36 /* Info.plist in Resources */,
 				C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */,
+				E0963BF51DA3F10C003F2A36 /* Info.plist in Resources */,
 				C1FD6BE51D9482F500E11288 /* people.json in Resources */,
 				C1FD6BE61D9482F800E11288 /* events.json in Resources */,
 				C18B7A8E1D6DBE520032E357 /* Localizable.strings in Resources */,
@@ -455,8 +455,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0963BF01DA3F0CA003F2A36 /* Info.plist in Resources */,
 				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
 				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
+				E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */,
 				C12FA0FD1D93A26A005A056D /* people.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +467,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */,
+				E0963BF11DA3F0D0003F2A36 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
