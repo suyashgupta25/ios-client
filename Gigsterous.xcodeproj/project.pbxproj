@@ -52,8 +52,6 @@
 		DB5A2D7F87FA2C068794FED4 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B72182E467A8E2686B84CA /* Pods_Gigsterous.framework */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
-		E0963BF01DA3F0CA003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
-		E0963BF11DA3F0D0003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
 		E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
 		E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
 		E0963BF41DA3F10A003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
@@ -467,7 +465,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0963BF01DA3F0CA003F2A36 /* Info.plist in Resources */,
 				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
 				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
 				E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */,
@@ -480,7 +477,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */,
-				E0963BF11DA3F0D0003F2A36 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,6 +797,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 69B00DBB3951C9B47C36D1D3 /* Pods-GigsterousTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				DEVELOPMENT_TEAM = 584XPHFEML;
@@ -818,6 +815,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 09936E4D33164C1089105AD0 /* Pods-GigsterousTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
 				DEVELOPMENT_TEAM = 584XPHFEML;
