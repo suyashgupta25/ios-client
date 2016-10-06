@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Application's home screen - what the user sees when the app is turned on.
- */
+/// Application's home screen - what the user sees when the app is turned on.
 class HomeViewController: UIViewController {
     
     override func viewDidLoad() {

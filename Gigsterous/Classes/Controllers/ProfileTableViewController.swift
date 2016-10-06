@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Personal profile of the user - all information on one screen.
- */
+/// Personal profile of the user - all information on one screen.
 class ProfileTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
 
@@ -33,9 +31,7 @@ class ProfileTableViewController: UITableViewController {
     
     // MARK: - IBActions
     
-    /**
-     Selector method called when UIRefreshControl is pulled.
-     */
+    /// Selector method called when UIRefreshControl is pulled.
     func refreshControlPulled() {
         // Show loading bar
         self.refreshData {
@@ -46,11 +42,9 @@ class ProfileTableViewController: UITableViewController {
     
     // MARK: - Internal methods
     
-    /**
-     Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
-     
-     - parameter success: Optional closure performed after loading has been performed.
-     */
+    /// Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
+    ///
+    /// - Parameter success: Optional closure performed after loading has been performed.
     func refreshData(success: (() -> Void)?) {
         // Data loading and setting
         success?()

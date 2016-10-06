@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Auditions screen showing all current and past auditions where the user participated.
- */
+/// Auditions screen showing all current and past auditions where the user participated.
 class AuditionsTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
 
@@ -32,9 +30,7 @@ class AuditionsTableViewController: UITableViewController {
     
     // MARK: - IBActions
     
-    /**
-     Selector method called when UIRefreshControl is pulled.
-     */
+    /// Selector method called when UIRefreshControl is pulled.
     func refreshControlPulled() {
         // Show loading bar
         self.refreshData {
@@ -45,11 +41,9 @@ class AuditionsTableViewController: UITableViewController {
     
     // MARK: - Internal methods
     
-    /**
-     Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
-     
-     - parameter success: Optional closure performed after loading has been performed.
-     */
+    /// Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
+    ///
+    /// - Parameter success: Optional closure performed after loading has been performed.
     func refreshData(success: (() -> Void)?) {
         // Data loading and setting
         success?()

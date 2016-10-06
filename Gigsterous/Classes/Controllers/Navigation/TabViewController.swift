@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Custom class for UITabBarController for customized transitions and appearance.
- */
+/// Custom class for UITabBarController for customized transitions and appearance.
 class TabViewController: UITabBarController, UITabBarControllerDelegate {
     
     override func viewDidLoad() {
@@ -27,16 +25,14 @@ class TabViewController: UITabBarController, UITabBarControllerDelegate {
         super.didReceiveMemoryWarning()
     }
     
-    /**
-     Called to allow the delegate to return a UIViewControllerAnimatedTransitioning delegate object for use during a noninteractive tab bar view controller transition.
-     
-     Implemented in a fashion to use the class TabBarTransition which slides the other controller either from the right or from the left.
-     
-     - parameter tabBarController: The tab bar controller whose view controller is transitioning.
-     - parameter fromVC: The currently visible view controller.
-     - parameter toVC: The view controller intended to be visible after the transition ends.
-     - returns: The UIViewControllerAnimatedTransitioning delegate object responsible for managing the tab bar view controller transition animation.
-     */
+    /// Called to allow the delegate to return a UIViewControllerAnimatedTransitioning delegate object for use during a noninteractive tab bar view controller transition.
+    ///
+    /// Implemented in a fashion to use the class TabBarTransition which slides the other controller either from the right or from the left.
+    ///
+    /// - Parameter tabBarController: The tab bar controller whose view controller is transitioning.
+    /// - Parameter fromVC: The currently visible view controller.
+    /// - Parameter toVC: The view controller intended to be visible after the transition ends.
+    /// - Returns: The UIViewControllerAnimatedTransitioning delegate object responsible for managing the tab bar view controller transition animation.
     func tabBarController(_ tabBarController: UITabBarController, animationControllerForTransitionFrom fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         
         guard let viewControllers = tabBarController.viewControllers else {

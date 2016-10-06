@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Ensembles screen showing user's associated acts.
- */
+/// Ensembles screen showing user's associated acts.
 class EnsemblesTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
     var ensembles: [Ensemble] = []
@@ -37,9 +35,7 @@ class EnsemblesTableViewController: UITableViewController {
     
     // MARK: - IBActions
     
-    /**
-     Selector method called when UIRefreshControl is pulled.
-     */
+    /// Selector method called when UIRefreshControl is pulled.
     func refreshControlPulled() {
         // Show loading bar
         self.refreshData {
@@ -50,11 +46,9 @@ class EnsemblesTableViewController: UITableViewController {
     
     // MARK: - Internal methods
     
-    /**
-     Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
-     
-     - parameter success: Optional closure performed after loading has been performed.
-     */
+    /// Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
+    ///
+    /// - Parameter success: Optional closure performed after loading has been performed.
     func refreshData(success: (() -> Void)?) {
         ClientMock.sharedInstance.ensembles({ (ensembles: [Ensemble]) in
             self.ensembles = ensembles
