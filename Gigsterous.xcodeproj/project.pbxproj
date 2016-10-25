@@ -50,12 +50,11 @@
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		DB5A2D7F87FA2C068794FED4 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B72182E467A8E2686B84CA /* Pods_Gigsterous.framework */; };
+		E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002E0681DA6514400232A4D /* EventFormViewController.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
-		E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
-		E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
-		E0963BF41DA3F10A003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4591D24249C004124E2 /* Info.plist */; };
-		E0963BF51DA3F10C003F2A36 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F44E1D24249C004124E2 /* Info.plist */; };
+		E0F43E171DB68EF00087BB10 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */; };
+		E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,7 +117,10 @@
 		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		C96FC3CD238CCF2E1D6B6BA1 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
+		E002E0681DA6514400232A4D /* EventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
+		E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,6 +234,8 @@
 				C1F0F4371D24249C004124E2 /* HomeViewController.swift */,
 				C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */,
 				C152E9251D64937C005AAF2F /* EventsTableViewController.swift */,
+				E002E0681DA6514400232A4D /* EventFormViewController.swift */,
+				E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */,
 				C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */,
 				C152E9291D6493A0005AAF2F /* ProfileTableViewController.swift */,
 			);
@@ -254,6 +258,7 @@
 				C11D16E21D94325D000C874E /* Constants.swift */,
 				C152E9361D64A84A005AAF2F /* ColorSchemes.swift */,
 				C152E9381D64C7D7005AAF2F /* UIColorExtension.swift */,
+				E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -449,9 +454,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0963BF41DA3F10A003F2A36 /* Info.plist in Resources */,
 				C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */,
-				E0963BF51DA3F10C003F2A36 /* Info.plist in Resources */,
 				C1FD6BE51D9482F500E11288 /* people.json in Resources */,
 				C1FD6BE61D9482F800E11288 /* events.json in Resources */,
 				C18B7A8E1D6DBE520032E357 /* Localizable.strings in Resources */,
@@ -467,7 +470,6 @@
 			files = (
 				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
 				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
-				E0963BF31DA3F0F3003F2A36 /* Info.plist in Resources */,
 				C12FA0FD1D93A26A005A056D /* people.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -476,7 +478,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0963BF21DA3F0F0003F2A36 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -582,7 +583,9 @@
 			files = (
 				C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */,
 				C11D16E31D94325D000C874E /* Constants.swift in Sources */,
+				E0F43E171DB68EF00087BB10 /* DateTableViewCell.swift in Sources */,
 				C152E9301D649E28005AAF2F /* TabBarSlidingTransition.swift in Sources */,
+				E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
 				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
@@ -599,6 +602,7 @@
 				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
 				C1FD6BE91D95051000E11288 /* Skill.swift in Sources */,
+				E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
 				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
 			);
@@ -765,7 +769,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -782,7 +786,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -799,7 +803,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -817,7 +821,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -832,7 +836,7 @@
 		C1F0F4631D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -847,7 +851,7 @@
 		C1F0F4641D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Michal Svacha (2J66J83CY3)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
