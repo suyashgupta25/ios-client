@@ -95,7 +95,7 @@ class EventsTableViewController: UITableViewController {
         if let date = cell.viewWithTag(3) as? UILabel {
             let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
-            date.text = dateFormatter.string(from: eventData.date)
+            date.text = dateFormatter.string(from: eventData.startDate)
         }
         
         cell.preservesSuperviewLayoutMargins = false

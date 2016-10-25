@@ -14,7 +14,8 @@ class Event: Mappable {
     var id: Int!
     var name: String!
     var venue: String!
-    var date: Date!
+    var startDate: Date!
+    var endDate: Date!
     var people: [Person]!
     
     required init?(map: Map) {}
@@ -25,7 +26,8 @@ class Event: Mappable {
         id <- map["id"]
         name <- map["name"]
         venue <- map["venue"]
-        date <- (map["date"], DateStringTransform())
+        startDate <- (map["startDate"], DateStringTransform())
+        endDate <- (map["endDate"], DateStringTransform())
         people <- map["people"]
     }
     
@@ -41,7 +43,11 @@ class Event: Mappable {
             return false
         }
         
-        guard self.date != nil else {
+        guard self.startDate != nil else {
+            return false
+        }
+        
+        guard self.endDate != nil else {
             return false
         }
         
