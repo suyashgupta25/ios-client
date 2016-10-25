@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Events screen showing user's events, but also relevated events nearby.
- */
+/// Events screen showing user's events, but also relevated events nearby.
 class EventsTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
     var events: [Event] = []
@@ -20,6 +18,8 @@ class EventsTableViewController: UITableViewController {
 
         self.navigationItem.title = NSLocalizedString("EVENTS", comment: "")
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(EventsTableViewController.addButtonPressed))
         
         self.customRefreshControl = UIRefreshControl()
         self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
@@ -37,9 +37,7 @@ class EventsTableViewController: UITableViewController {
     
     // MARK: - IBActions
     
-    /**
-     Selector method called when UIRefreshControl is pulled.
-     */
+    /// Selector method called when UIRefreshControl is pulled.
     func refreshControlPulled() {
         // Show loading bar
         self.refreshData {
@@ -48,13 +46,19 @@ class EventsTableViewController: UITableViewController {
         }
     }
     
+    /// Called after the add button in the navigation bar has been pressed. Creates and displays a form for adding a new event.
+    func addButtonPressed() {
+        if let formViewController = self.storyboard?.instantiateViewController(withIdentifier: "eventFormController") {
+            let navigationController = NavigationViewController(rootViewController: formViewController)
+            self.tabBarController?.present(navigationController, animated: true, completion: nil)
+        }
+    }
+    
     // MARK: - Internal methods
     
-    /**
-     Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
-     
-     - parameter success: Optional closure performed after loading has been performed.
-     */
+    /// Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
+    ///
+    /// - Parameter success: Optional closure performed after loading has been performed.
     func refreshData(success: (() -> Void)?) {
         ClientMock.sharedInstance.events({ (events: [Event]) in
             self.events = events
@@ -99,5 +103,11 @@ class EventsTableViewController: UITableViewController {
         cell.layoutMargins = UIEdgeInsets.zero
 
         return cell
+    }
+    
+    // MARK: - Table view delegate methods
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
     }
 }
