@@ -28,6 +28,16 @@
 
 "NEW_EVENT" = "New Event";
 "EMPTY_FIELDS" = "Some mandatory fields were left blank.";
+"GENERAL" = "General";
+"NAME" = "Name";
+"VENUE" = "Venue";
+"DATES" = "Dates";
+"DATE_FROM" = "From";
+"DATE_TO" = "To";
+"ATTENDEES" = "Attendees";
+"ADD_ATTENDEE" = "Add attendee";
+"AUDITIONS" = "Auditions";
+"ADD_AUDITION" = "Add audition";
 
 // Auditions Screen
 
