@@ -99,15 +99,23 @@ class EventFormViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.structure[section]["sectionName"] as? String
+        if let sectionName = self.structure[section]["sectionName"] as? String {
+            return NSLocalizedString(sectionName, comment: "")
+        }
+        
+        return nil
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cells = self.structure[indexPath.section]["cells"] as? [[String : String]] else {
             fatalError("Cell identifier not found")
         }
-        let identifier = cells[indexPath.row]["type"]!
+        let cellInfo = cells[indexPath.row]
+        let identifier = cellInfo["type"]!
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        if let label = cell.viewWithTag(1) as? UILabel, let labelText = cellInfo["name"] {
+            label.text = NSLocalizedString(labelText, comment: "")
+        }
         return cell
     }
     
