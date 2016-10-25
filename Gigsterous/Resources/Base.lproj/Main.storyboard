@@ -271,13 +271,13 @@
                                     <frame key="frameInset" width="375" height="54"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-v6-5vm">
+                                        <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="form_add" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-v6-5vm">
                                             <constraints>
                                                 <constraint firstAttribute="width" secondItem="aVz-v6-5vm" secondAttribute="height" multiplier="1:1" id="JW0-La-zi9"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e84-Wf-OcO">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -490,6 +490,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="form_add" width="39" height="39"/>
         <image name="tab_auditions" width="30" height="30"/>
         <image name="tab_ensembles" width="30" height="30"/>
         <image name="tab_events" width="30" height="30"/>
