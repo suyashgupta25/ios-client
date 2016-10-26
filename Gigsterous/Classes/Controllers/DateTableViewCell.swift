@@ -8,13 +8,25 @@
 
 import UIKit
 
-class DateTableViewCell: UITableViewCell {
+///
+protocol DateTableViewCellDelegate {
+    ///
+    func onDidChangeDate(date: Date, row: Int)
+}
 
+///
+class DateTableViewCell: UITableViewCell {
+    /// Variable indicating position.
+    var row: Int = 0
+    var delegate: DateTableViewCellDelegate?
+    
+    ///
     override func awakeFromNib() {
         super.awakeFromNib()
         
         if let datePicker = self.viewWithTag(3) as? UIDatePicker {
             datePicker.addTarget(self, action: #selector(DateTableViewCell.onDidChangeDate(datePicker:)), for: .valueChanged)
+            datePicker.minimumDate = Date()
         }
     }
 
@@ -22,22 +34,28 @@ class DateTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func selectedDate() -> Date {
-        if let datePicker = self.viewWithTag(3) as? UIDatePicker {
-            return datePicker.date
-        }
+    ///
+    private func setLabelText(date: Date) {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
+        let dateString = dateFormatter.string(from: date)
         
-        return Date()
+        let label = self.viewWithTag(2) as? UILabel
+        label?.text = dateString
+    }
+    
+    func setDate(date: Date) {
+        if let datePicker = self.viewWithTag(3) as? UIDatePicker {
+            datePicker.setDate(date, animated: false)
+            self.setLabelText(date: date)
+        }
     }
 
     // MARK: - UIDatePicker selector method
     
+    ///
     func onDidChangeDate(datePicker: UIDatePicker) {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
-        let dateString = dateFormatter.string(from: datePicker.date)
-        
-        let label = self.viewWithTag(2) as? UILabel
-        label?.text = dateString
+        self.setLabelText(date: datePicker.date)
+        self.delegate?.onDidChangeDate(date: datePicker.date, row: self.row)
     }
 }

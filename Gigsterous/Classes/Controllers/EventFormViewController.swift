@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EventFormViewController: UITableViewController {
+class EventFormViewController: UITableViewController, DateTableViewCellDelegate {
     let event = Event()
     
     /// Instance variable keeping track of whether or not a date cell is expanded.
@@ -44,6 +44,10 @@ class EventFormViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.event.name = NSLocalizedString("NEW_EVENT", comment: "")
+        self.event.startDate = Date()
+        self.event.endDate = self.event.startDate.addingTimeInterval(3600)
 
         self.navigationItem.title = NSLocalizedString("NEW_EVENT", comment: "")
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
@@ -113,9 +117,21 @@ class EventFormViewController: UITableViewController {
         let cellInfo = cells[indexPath.row]
         let identifier = cellInfo["type"]!
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+        
+        if identifier == "dateInput" {
+            let dateCell = cell as! DateTableViewCell
+            dateCell.row = indexPath.row
+            dateCell.delegate = self
+            
+            let date = indexPath.row == 0 ?
+                self.event.startDate : self.event.endDate
+            dateCell.setDate(date: date!)
+        }
+        
         if let label = cell.viewWithTag(1) as? UILabel, let labelText = cellInfo["name"] {
             label.text = NSLocalizedString(labelText, comment: "")
         }
+        
         return cell
     }
     
@@ -137,5 +153,32 @@ class EventFormViewController: UITableViewController {
         }
         
         tableView.cellForRow(at: indexPath)?.setSelected(false, animated: true)
+    }
+    
+    // MARK: - DateTableViewCell delegate method
+    
+    func onDidChangeDate(date: Date, row: Int) {
+        let formerDifference = self.event.endDate.timeIntervalSince(self.event.startDate)
+        
+        if row == 0 {
+            self.event.startDate = date
+            
+            if self.event.startDate.compare(self.event.endDate) != .orderedAscending {
+                self.event.endDate = self.event.startDate.addingTimeInterval(formerDifference)
+            }
+        } else {
+            self.event.endDate = date
+            
+            if self.event.startDate.compare(self.event.endDate) != .orderedAscending {
+                var dateCandidate = self.event.endDate.addingTimeInterval(-formerDifference)
+                if dateCandidate.compare(Date()) == .orderedAscending {
+                    dateCandidate = Date()
+                }
+                
+                self.event.startDate = dateCandidate
+            }
+        }
+        
+        self.tableView.reloadData()
     }
 }
