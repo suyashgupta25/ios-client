@@ -30,27 +30,4 @@ class Event: Mappable {
         endDate <- (map["endDate"], DateStringTransform())
         people <- map["people"]
     }
-    
-    /// Indicates whether or not the object has all necessary data set in order to be sent to the server.
-    ///
-    /// - Returns: True if all necessary data has been set (name, venue and date).
-    func isComplete() -> Bool {
-        guard self.name != nil else {
-            return false
-        }
-        
-        guard self.venue != nil else {
-            return false
-        }
-        
-        guard self.startDate != nil else {
-            return false
-        }
-        
-        guard self.endDate != nil else {
-            return false
-        }
-        
-        return true
-    }
 }
