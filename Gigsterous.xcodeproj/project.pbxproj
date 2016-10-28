@@ -53,8 +53,7 @@
 		E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002E0681DA6514400232A4D /* EventFormViewController.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
-		E08CBA6A1DBFAB620044E499 /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E08CBA691DBFAB620044E499 /* InputTableViewCell.swift */; };
-		E0F43E171DB68EF00087BB10 /* DateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */; };
+		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
 		E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
 /* End PBXBuildFile section */
 
@@ -117,8 +116,7 @@
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		E002E0681DA6514400232A4D /* EventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
-		E08CBA691DBFAB620044E499 /* InputTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
-		E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateTableViewCell.swift; sourceTree = "<group>"; };
+		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathExtension.swift; sourceTree = "<group>"; };
 		E22FF2D79F18CA04E8F12538 /* Pods-GigsterousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigsterousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E50A93A8E19731B3BC1980EC /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
@@ -179,6 +177,7 @@
 				C1F0F4351D24249C004124E2 /* AppDelegate.swift */,
 				C12FA0EB1D93A200005A056D /* Model */,
 				C12FA0EC1D93A206005A056D /* Networking */,
+				E0C2CA0F1DC3956100779C7C /* ViewModel */,
 				C152E92B1D6493CF005AAF2F /* Controllers */,
 				C152E9311D64A143005AAF2F /* Helpers */,
 			);
@@ -236,7 +235,7 @@
 				C1F0F4371D24249C004124E2 /* HomeViewController.swift */,
 				C152E9211D649357005AAF2F /* EnsemblesTableViewController.swift */,
 				C152E9251D64937C005AAF2F /* EventsTableViewController.swift */,
-				E08CBA6B1DC0F13A0044E499 /* Event Form */,
+				E002E0681DA6514400232A4D /* EventFormViewController.swift */,
 				C152E9271D64938F005AAF2F /* AuditionsTableViewController.swift */,
 				C152E9291D6493A0005AAF2F /* ProfileTableViewController.swift */,
 			);
@@ -339,14 +338,12 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
-		E08CBA6B1DC0F13A0044E499 /* Event Form */ = {
+		E0C2CA0F1DC3956100779C7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				E002E0681DA6514400232A4D /* EventFormViewController.swift */,
-				E08CBA691DBFAB620044E499 /* InputTableViewCell.swift */,
-				E0F43E161DB68EF00087BB10 /* DateTableViewCell.swift */,
+				E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */,
 			);
-			name = "Event Form";
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -594,10 +591,8 @@
 			files = (
 				C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */,
 				C11D16E31D94325D000C874E /* Constants.swift in Sources */,
-				E0F43E171DB68EF00087BB10 /* DateTableViewCell.swift in Sources */,
 				C152E9301D649E28005AAF2F /* TabBarSlidingTransition.swift in Sources */,
 				E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */,
-				E08CBA6A1DBFAB620044E499 /* InputTableViewCell.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
 				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
@@ -617,6 +612,7 @@
 				E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
 				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
+				E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
