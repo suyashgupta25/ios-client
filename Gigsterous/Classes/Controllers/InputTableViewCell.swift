@@ -9,7 +9,18 @@
 import UIKit
 
 ///
+protocol InputTableViewCellDelegate {
+    
+    ///
+    func onFinishedTyping(text: String, row: Int)
+}
+
+///
 class InputTableViewCell: UITableViewCell, UITextFieldDelegate {
+    
+    /// Variable indicating position.
+    var row: Int = 0
+    var delegate: InputTableViewCellDelegate?
     
     ///
     override func awakeFromNib() {
@@ -30,6 +41,8 @@ class InputTableViewCell: UITableViewCell, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         if let textField = self.viewWithTag(2) as? UITextField {
             textField.resignFirstResponder()
+            let text = textField.text ?? ""
+            self.delegate?.onFinishedTyping(text: text, row: self.row)
         }
         
         return true

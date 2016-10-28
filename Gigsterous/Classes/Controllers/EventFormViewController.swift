@@ -8,7 +8,8 @@
 
 import UIKit
 
-class EventFormViewController: UITableViewController, DateTableViewCellDelegate {
+///
+class EventFormViewController: UITableViewController, DateTableViewCellDelegate, InputTableViewCellDelegate {
     let event = Event()
     
     /// Instance variable keeping track of whether or not a date cell is expanded.
@@ -112,20 +113,34 @@ class EventFormViewController: UITableViewController, DateTableViewCellDelegate 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cells = self.structure[indexPath.section]["cells"] as? [[String : String]] else {
-            fatalError("Cell identifier not found")
+            fatalError("Cell structure not found")
         }
         let cellInfo = cells[indexPath.row]
         let identifier = cellInfo["type"]!
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         
-        if identifier == "dateInput" {
-            let dateCell = cell as! DateTableViewCell
-            dateCell.row = indexPath.row
-            dateCell.delegate = self
-            
-            let date = indexPath.row == 0 ?
-                self.event.startDate : self.event.endDate
-            dateCell.setDate(date: date!)
+        switch identifier {
+            case "dateInput":
+                let dateCell = cell as! DateTableViewCell
+                dateCell.row = indexPath.row
+                dateCell.delegate = self
+                
+                let date = indexPath.row == 0 ?
+                    self.event.startDate : self.event.endDate
+                dateCell.setDate(date: date!)
+            break
+            case "textInput":
+                let inputCell = cell as! InputTableViewCell
+                inputCell.row = indexPath.row
+                inputCell.delegate = self
+                
+                if indexPath.row == 0 {
+                    let textField = cell.viewWithTag(2) as! UITextField
+                    textField.text = self.event.name
+                }
+            break
+        default:
+            break
         }
         
         if let label = cell.viewWithTag(1) as? UILabel, let labelText = cellInfo["name"] {
@@ -180,5 +195,15 @@ class EventFormViewController: UITableViewController, DateTableViewCellDelegate 
         }
         
         self.tableView.reloadData()
+    }
+    
+    // MARK: - InputTableViewCell delegate method
+    
+    func onFinishedTyping(text: String, row: Int) {
+        if row == 0 {
+            self.event.name = text
+        } else {
+            self.event.venue = text
+        }
     }
 }
