@@ -8,17 +8,13 @@
 
 import UIKit
 
-/**
- UIColor extension supporting Name declaration in order to prevent tedious RGB initialization.
- 
- Inspired by article by @aligatr available at:
- http://alisoftware.github.io/swift/enum/constants/2015/07/19/enums-as-constants/
- */
+/// UIColor extension supporting Name declaration in order to prevent tedious RGB initialization.
+///
+/// Inspired by article by @aligatr available at:
+/// http://alisoftware.github.io/swift/enum/constants/2015/07/19/enums-as-constants/
 extension UIColor {
     
-    /**
-     Enum values for additional colors.
-     */
+    /// Enum values for additional colors.
     enum Name: UInt32 {
         case DarkBlack = 0x2B2118ff
         case Cyan = 0x188FA7ff
@@ -27,11 +23,9 @@ extension UIColor {
         case GardYellow = 0xF1F1C2ff
     }
     
-    /**
-     Convenience initializer to initialize color with a given Name enum value.
-     
-     - parameter name: Enum Name value representing one of the additional colors.
-     */
+    /// Convenience initializer to initialize color with a given Name enum value.
+    ///
+    /// - Parameter name: Enum Name value representing one of the additional colors.
     convenience init(named name: Name) {
         let RGBAValue = name.rawValue
         let R = CGFloat((RGBAValue >> 24) & 0xff) / 255.0
