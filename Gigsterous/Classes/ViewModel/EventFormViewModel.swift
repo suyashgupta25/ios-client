@@ -9,24 +9,16 @@
 import Foundation
 import Bond
 
-///
-extension Date {
-    func humanReadableString() -> String {
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy/MM/dd HH:mm"
-        let dateString = dateFormatter.string(from: self)
-        return dateString
-    }
-}
-
-///
+/// ViewModel for event form.
 class EventFormViewModel {
     let name = Observable<String?>(NSLocalizedString("NEW_EVENT", comment: ""))
     let venue = Observable<String?>("")
     let startDate = Observable<Date>(Date())
     let endDate = Observable<Date>(Date().addingTimeInterval(3600))
     
-    ///
+    /// Hooks up logic between dates.
+    /// - startDate should never be later than endDate. If such situation is presented on the input (= user enters a date that is later than the endDate), endDate should be automatically adjusted. Currently set to automatically adjust the endDate an hour after the startDate.
+    /// - endDate should never be earlier than startDate. If such situation is presented on the input (= user enters a date that is earlier than the startDate), startDate should be automatically adjusted. Currently set to automatically adjust the startDate an hour before the endDate. In case such option is earlier than NOW, current date is selected instead.
     init() {
         _ = self.startDate.observeNext { date in
             if date.compare(self.endDate.value) != .orderedAscending {
