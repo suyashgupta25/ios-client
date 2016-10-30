@@ -82,7 +82,18 @@ class EventFormViewController: UITableViewController {
     /// Checks whether information in the form is complete and proceeds with next steps. When information is not complete, warns the user. Called when done button in the top right corner is pressed.
     func doneButtonPressed() {
         if self.eventViewModel.isComplete() {
-            print("I AM COMPLETE!")
+            self.navigationController?.dismiss(animated: true, completion: {
+                // temporary
+                let alertController = UIAlertController(
+                    title: "Success",
+                    message: "The form has been successfully filled. Awaiting REST API implementation.",
+                    preferredStyle: .alert)
+                alertController.addAction(UIAlertAction(
+                    title: NSLocalizedString("CLOSE", comment: ""),
+                    style: .cancel,
+                    handler: nil))
+                UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+            })
         } else {
             let alertController = UIAlertController(
                 title: NSLocalizedString("WARNING", comment: ""),
