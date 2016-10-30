@@ -19,7 +19,7 @@ open class DateStringTransform: TransformType {
     public func transformFromJSON(_ value: Any?) -> Date? {
         if let dateString = value as? String {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
             
             let date = dateFormatter.date(from: dateString)
             return date
@@ -31,7 +31,7 @@ open class DateStringTransform: TransformType {
     public func transformToJSON(_ value: Date?) -> String? {
         if let date = value {
             let dateFormatter = DateFormatter()
-            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+            dateFormatter.dateFormat = "yyyy-MM-dd HH:mm"
             
             let dateString = dateFormatter.string(from: date)
             return dateString

@@ -8,9 +8,7 @@
 
 import UIKit
 
-/**
- Custom class for UINavigationController to make styling easier.
- */
+/// Custom class for UINavigationController to make styling easier.
 class NavigationViewController: UINavigationController {
     
     override func viewDidLoad() {

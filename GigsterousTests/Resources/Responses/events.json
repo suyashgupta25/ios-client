@@ -3,7 +3,8 @@
   "id":1,
   "name":"Hard Rock Tour",
   "venue":"Vagon",
-  "date":"2016-12-01 20:00:00",
+  "startDate": "2016-12-01 19:00",
+  "endDate": "2016-12-01 22:00",
   "people":[
             {
             "id":2,
@@ -43,7 +44,8 @@
   "id":2,
   "name":"Christmas Classics",
   "venue":"Rudolfinum",
-  "date":"2016-12-24 19:00:00",
+  "startDate": "2016-12-24 18:00",
+  "endDate": "2016-12-24 21:00",
   "people":[
             {
             "id":4,

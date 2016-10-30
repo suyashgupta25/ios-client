@@ -8,19 +8,15 @@
 
 import UIKit
 
-/**
- Custom class for transition between view controllers used in TabBarViewController.
- */
+/// Custom class for transition between view controllers used in TabBarViewController.
 class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
     var viewSize: CGSize = UIScreen.main.bounds.size
     var isScrollingLeft = true
     
-    /**
-     Convenience initializer for the transition.
-     
-     - parameter viewSize: Size of the views we are dealing with.
-     - parameter isScrollingLeft: Boolean flag determining whether the sliding animation should be to the left or to the right.
-     */
+    /// Convenience initializer for the transition.
+    ///
+    /// - Parameter viewSize: Size of the views we are dealing with.
+    /// - Parameter isScrollingLeft: Boolean flag determining whether the sliding animation should be to the left or to the right.
     convenience init(viewSize: CGSize, isScrollingLeft: Bool) {
         self.init()
         
@@ -28,11 +24,9 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
         self.isScrollingLeft = isScrollingLeft
     }
     
-    /**
-     Performs the sliding animation. If destination is a higher index, the sliding effect is to the left. If the destination is a lower index, the sliding effect is to the right.
-     
-     - parameter transitionContext: The context object containing information about the transition.
-     */
+    /// Performs the sliding animation. If destination is a higher index, the sliding effect is to the left. If the destination is a lower index, the sliding effect is to the right.
+    ///
+    /// - Parameter transitionContext: The context object containing information about the transition.
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         let origin = transitionContext.view(forKey: UITransitionContextViewKey.from)!
         let destination = transitionContext.view(forKey: UITransitionContextViewKey.to)!
@@ -54,12 +48,10 @@ class TabBarSlidingTransition: NSObject, UIViewControllerAnimatedTransitioning {
         })
     }
     
-    /**
-     Determines the length of the transition.
-     
-     - parameter transitionContext: The context object containing information to use during the transition.
-     - returns: The duration, in seconds, of your custom transition animation.
-     */
+    /// Determines the length of the transition.
+    ///
+    /// - Parameter transitionContext: The context object containing information to use during the transition.
+    /// - Returns: The duration, in seconds, of your custom transition animation.
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
         return 0.3
     }

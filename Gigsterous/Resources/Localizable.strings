@@ -9,6 +9,8 @@
 // General UI
 
 "PULL2REFRESH" = "Pull to refresh";
+"WARNING" = "Warning";
+"CLOSE" = "Close";
 
 // Basement Screen
 
@@ -21,6 +23,21 @@
 // Events Screen
 
 "EVENTS" = "Events";
+
+// Event Form
+
+"NEW_EVENT" = "New Event";
+"EMPTY_FIELDS" = "Some mandatory fields were left blank.";
+"GENERAL" = "General";
+"NAME" = "Name";
+"VENUE" = "Venue";
+"DATES" = "Dates";
+"DATE_FROM" = "From";
+"DATE_TO" = "To";
+"ATTENDEES" = "Attendees";
+"ADD_ATTENDEE" = "Add attendee";
+"AUDITIONS" = "Auditions";
+"ADD_AUDITION" = "Add audition";
 
 // Auditions Screen
 

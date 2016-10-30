@@ -1,30 +1,34 @@
 PODS:
-  - Alamofire (4.0.0)
+  - Alamofire (4.0.1)
+  - Bond (5.0.0):
+    - ReactiveKit (~> 3.0)
   - MBProgressHUD (0.9.2)
   - Moya (8.0.0-beta.2):
     - Moya/Core (= 8.0.0-beta.2)
   - Moya/Core (8.0.0-beta.2):
     - Alamofire (~> 4.0.0)
     - Result
-  - ObjectMapper (2.0.0)
-  - OHHTTPStubs (5.2.1):
-    - OHHTTPStubs/Default (= 5.2.1)
-  - OHHTTPStubs/Core (5.2.1)
-  - OHHTTPStubs/Default (5.2.1):
+  - ObjectMapper (2.2.0)
+  - OHHTTPStubs (5.2.2):
+    - OHHTTPStubs/Default (= 5.2.2)
+  - OHHTTPStubs/Core (5.2.2)
+  - OHHTTPStubs/Default (5.2.2):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (5.2.1):
+  - OHHTTPStubs/JSON (5.2.2):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (5.2.1):
+  - OHHTTPStubs/NSURLSession (5.2.2):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (5.2.1)
-  - OHHTTPStubs/Swift (5.2.1):
+  - OHHTTPStubs/OHPathHelpers (5.2.2)
+  - OHHTTPStubs/Swift (5.2.2):
     - OHHTTPStubs/Core
+  - ReactiveKit (3.0.0)
   - Result (3.0.0)
 
 DEPENDENCIES:
+  - Bond (~> 5.0)
   - MBProgressHUD (~> 0.9.1)
   - Moya (= 8.0.0-beta.2)
   - ObjectMapper (~> 2.0)
@@ -32,13 +36,15 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
-  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  Bond: f586625218d9342a97965d79bce5bd4c2f611ffd
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   Moya: 920d40f738e6f4ece84010cec701bb9693be8251
-  ObjectMapper: aed2570edabbd3c9b26c939e1cabdb6558f933e0
-  OHHTTPStubs: 3a42f25c00563b71355ac73112ba2324e9e6cef4
+  ObjectMapper: 4060d739febae11ab0c6af8d786f98667c82e1bd
+  OHHTTPStubs: 34d9d0994e64fcf8552dbfade5ce82ada913ee31
+  ReactiveKit: b810fcaad07d8e4ded7670950526d84641134b6b
   Result: 1b3e431f37cbcd3ad89c6aa9ab0ae55515fae3b6
 
-PODFILE CHECKSUM: 0c5ff2ed51f910e33e26af149cfcb55233fc9376
+PODFILE CHECKSUM: af217d1c2cf61c814c16da90b200adb84b3e0d68
 
-COCOAPODS: 1.1.0.rc.2
+COCOAPODS: 1.1.1
