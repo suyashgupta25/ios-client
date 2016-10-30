@@ -55,6 +55,7 @@
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
 		E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
+		E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5EA4A1DC6663000700C56 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +119,7 @@
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathExtension.swift; sourceTree = "<group>"; };
+		E0F5EA4A1DC6663000700C56 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 		E22FF2D79F18CA04E8F12538 /* Pods-GigsterousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigsterousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E50A93A8E19731B3BC1980EC /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
 		F095BE803B287AC8FA3652B8 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
@@ -259,6 +261,7 @@
 				C152E9361D64A84A005AAF2F /* ColorSchemes.swift */,
 				C152E9381D64C7D7005AAF2F /* UIColorExtension.swift */,
 				E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */,
+				E0F5EA4A1DC6663000700C56 /* DateExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -600,6 +603,7 @@
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
+				E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */,
 				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
 				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
