@@ -7,8 +7,8 @@ branches:
     - master
 
 env:
-  - ACTION=build PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=9.0'
-  - ACTION=build PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=10.0'
+  - ACTION=build test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=9.0'
+  - ACTION=build test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=10.0'
 
 before_script:
   - export LANG=en_US.UTF-8
@@ -25,3 +25,6 @@ script:
   - set -o pipefail
   - xcodebuild -workspace Gigsterous.xcworkspace -scheme Gigsterous -destination "$DESTINATION" $ACTION | xcpretty -c
   - swiftlint
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
