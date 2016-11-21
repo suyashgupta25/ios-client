@@ -1,0 +1,27 @@
+# More documentation about how to customize your build
+# can be found here:
+# https://docs.fastlane.tools
+fastlane_version "1.110.0"
+
+# This value helps us track success metrics for Fastfiles
+# we automatically generate. Feel free to remove this line
+# once you get things running smoothly!
+generated_fastfile_id "352c236c-b8b9-4696-8d5a-42b3a0694b0f"
+
+default_platform :ios
+
+# Fastfile actions accept additional configuration, but
+# don't worry, fastlane will prompt you for required
+# info which you can add here later
+lane :beta do
+  # build your iOS app
+    gym(
+        scheme: "Gigsterous"
+    )
+
+    # upload to Beta by Crashlytics
+    crashlytics(
+        api_token: "b41d4c9a1be6c2fac24ce6ac9c91353a10741ce7",
+        build_secret: "51863973f5a5a69bc7232c817e95d4e8f434c9b84b946dca49db506d139feb21"
+    )
+end
