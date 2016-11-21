@@ -19,8 +19,8 @@ before_install:
   - gem update fastlane --no-ri --no-rdoc --no-document
 
 script:
-  - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test fi
-  - if [ "$TRAVIS_BRANCH" = "master" ]; then fastlane beta fi
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test; fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then fastlane beta; fi
   - swiftlint
 
 after_success:
