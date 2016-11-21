@@ -362,6 +362,7 @@
 				C1F0F4301D24249C004124E2 /* Resources */,
 				A7BD19D63D4992271E2AC927 /* [CP] Embed Pods Frameworks */,
 				829C9F8EFB6915BA22C4624C /* [CP] Copy Pods Resources */,
+				E0A390071DE37140009A6248 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -569,6 +570,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		E0A390071DE37140009A6248 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" b41d4c9a1be6c2fac24ce6ac9c91353a10741ce7 51863973f5a5a69bc7232c817e95d4e8f434c9b84b946dca49db506d139feb21";
 		};
 		EADE2245643EF4C2523399B4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -782,6 +796,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

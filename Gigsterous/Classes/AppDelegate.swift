@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        // Override point for customization after application launch.
+        // Initialize Fabric
+        Fabric.with([Crashlytics.self])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
