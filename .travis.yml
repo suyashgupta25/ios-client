@@ -6,10 +6,6 @@ branches:
     - develop
     - master
 
-env:
-  - ACTION=test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=9.0'
-  - ACTION=test PLATFORM=iOS DESTINATION='platform=iOS Simulator,name=iPhone 6S,OS=10.0'
-
 before_script:
   - export LANG=en_US.UTF-8
 
@@ -20,10 +16,11 @@ before_install:
   - brew update
   - brew install swiftlint || true
   - pod update Moya
+  - gem update fastlane --no-ri --no-rdoc --no-document
 
 script:
-  - set -o pipefail
-  - xcodebuild -workspace Gigsterous.xcworkspace -scheme Gigsterous -destination "$DESTINATION" $ACTION | xcpretty -c
+  - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test fi
+  - if [ "$TRAVIS_BRANCH" = "master" ]; then fastlane beta fi
   - swiftlint
 
 after_success:

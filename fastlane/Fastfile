@@ -13,8 +13,17 @@ default_platform :ios
 # Fastfile actions accept additional configuration, but
 # don't worry, fastlane will prompt you for required
 # info which you can add here later
+lane :test do
+    scan(
+        scheme: "Gigsterous",
+        device: "iPhone 7",
+        clean: true,
+        code_coverage: true
+    )
+end
+
 lane :beta do
-  # build your iOS app
+    # build your iOS app
     gym(
         scheme: "Gigsterous"
     )
