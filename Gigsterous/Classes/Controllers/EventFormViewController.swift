@@ -8,6 +8,7 @@
 
 import UIKit
 import Bond
+import ReactiveKit
 
 /// Controller responsible for handling form for a new event.
 class EventFormViewController: UITableViewController {
@@ -66,6 +67,16 @@ class EventFormViewController: UITableViewController {
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(EventFormViewController.cancelButtonPressed))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(EventFormViewController.doneButtonPressed))
+        
+        combineLatest(self.eventViewModel.name, self.eventViewModel.venue, self.eventViewModel.startDate, self.eventViewModel.endDate) {
+            name, venue, start, end in
+            
+            let nameCheck = name != nil && name != ""
+            let venueCheck = venue != nil && venue != ""
+            let dateConsistency = start.compare(end) == .orderedAscending
+            
+            return nameCheck && venueCheck && dateConsistency
+            }.bind(to: self.navigationItem.rightBarButtonItem!.bnd_isEnabled)
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,30 +92,18 @@ class EventFormViewController: UITableViewController {
     
     /// Checks whether information in the form is complete and proceeds with next steps. When information is not complete, warns the user. Called when done button in the top right corner is pressed.
     func doneButtonPressed() {
-        if self.eventViewModel.isComplete() {
-            self.navigationController?.dismiss(animated: true, completion: {
-                // temporary
-                let alertController = UIAlertController(
-                    title: "Success",
-                    message: "The form has been successfully filled. Awaiting REST API implementation.",
-                    preferredStyle: .alert)
-                alertController.addAction(UIAlertAction(
-                    title: NSLocalizedString("CLOSE", comment: ""),
-                    style: .cancel,
-                    handler: nil))
-                UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
-            })
-        } else {
+        self.navigationController?.dismiss(animated: true, completion: {
+            // temporary
             let alertController = UIAlertController(
-                title: NSLocalizedString("WARNING", comment: ""),
-                message: NSLocalizedString("EMPTY_FIELDS", comment: ""),
+                title: "Success",
+                message: "The form has been successfully filled. Awaiting REST API implementation.",
                 preferredStyle: .alert)
             alertController.addAction(UIAlertAction(
                 title: NSLocalizedString("CLOSE", comment: ""),
                 style: .cancel,
                 handler: nil))
-            self.navigationController?.present(alertController, animated: true, completion: nil)
-        }
+            UIApplication.shared.keyWindow?.rootViewController?.present(alertController, animated: true, completion: nil)
+        })
     }
 
     // MARK: - Table view data source
