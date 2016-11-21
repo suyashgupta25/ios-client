@@ -16,3 +16,7 @@ profile
 DerivedData
 .idea/
 Pods
+fastlane/README.md
+fastlane/*.xml
+fastlane/test_output/*.junit
+fastlane/test_output/*.html
