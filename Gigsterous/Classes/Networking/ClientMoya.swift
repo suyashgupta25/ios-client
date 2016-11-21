@@ -17,7 +17,7 @@ class ClientMoya: Client {
     var apiProvider: MoyaProvider<API> = MoyaProvider<API>(endpointClosure: {
         (target: API) -> Endpoint<API> in
         let endpoint: Endpoint<API> = Endpoint<API>(URL: url(target), sampleResponseClosure: {.networkResponse(200, target.sampleData)}, method: target.method, parameters: target.parameters, parameterEncoding: target.parameterEncoding)
-        return endpoint.endpointByAddingHTTPHeaderFields(["Accept": "application/json", "Content-Type" : "application/json"])
+        return endpoint.adding(newHttpHeaderFields: ["Accept": "application/json", "Content-Type" : "application/json"])
     })
     
     func people(_ handler: @escaping (_ people: [Person]) -> Void, failure: @escaping (_ error: NSError) -> Void) {

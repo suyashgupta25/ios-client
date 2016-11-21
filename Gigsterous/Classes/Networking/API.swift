@@ -37,7 +37,7 @@ extension API: TargetType {
     public var method: Moya.Method {
         switch self {
         case .People(), .Ensembles(), .Events():
-            return .GET
+            return .get
         }
     }
     
