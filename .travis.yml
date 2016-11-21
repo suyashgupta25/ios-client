@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8
+osx_image: xcode8.2
 
 branches:
   only:
@@ -10,13 +10,13 @@ before_script:
   - export LANG=en_US.UTF-8
 
 before_install:
-  - rvm install ruby-2.2.2
-  - gem install cocoapods --pre
-  - gem install xcpretty -N
+  #- rvm install ruby-2.2.2
+  #- gem install cocoapods --pre
+  #- gem install xcpretty -N
   - brew update
   - brew install swiftlint || true
-  - pod update Moya
-  - gem update fastlane --no-ri --no-rdoc --no-document
+  #- pod update Moya
+  #- gem update fastlane --no-ri --no-rdoc --no-document
 
 script:
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test; fi
