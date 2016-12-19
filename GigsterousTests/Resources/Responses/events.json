@@ -1,94 +1,114 @@
- [
-  {
-  "id":1,
-  "name":"Hard Rock Tour",
-  "venue":"Vagon",
-  "startDate": "2016-12-01 19:00",
-  "endDate": "2016-12-01 22:00",
-  "people":[
-            {
-            "id":2,
-            "firstName":"John",
-            "lastName":"Doe",
-            "email":"john@email.cz",
-            "gender":"MALE",
-            "location":"London",
-            "dateOfBirth":"1985-06-11",
-            "skills":[
-                      {
-                      "id":2,
-                      "instrument":"BASS",
-                      "level":"ADVANCED"
-                      }
-                      ]
-            },
-            {
-            "id":1,
-            "firstName":"Peter",
-            "lastName":"Smith",
-            "email":"peter@hotmail.com",
-            "gender":"MALE",
-            "location":"London",
-            "dateOfBirth":"1980-04-07",
-            "skills":[
-                      {
-                      "id":1,
-                      "instrument":"GUITAR",
-                      "level":"BEGINNER"
-                      }
-                      ]
-            }
-            ]
-  },
-  {
-  "id":2,
-  "name":"Christmas Classics",
-  "venue":"Rudolfinum",
-  "startDate": "2016-12-24 18:00",
-  "endDate": "2016-12-24 21:00",
-  "people":[
-            {
-            "id":4,
-            "firstName":"Gandal",
-            "lastName":"White",
-            "email":"white@gmail.com",
-            "gender":"MALE",
-            "location":"Mordor",
-            "dateOfBirth":"1978-06-05",
-            "skills":[
-                      {
-                      "id":5,
-                      "instrument":"GUITAR",
-                      "level":"ADVANCED"
-                      },
-                      {
-                      "id":6,
-                      "instrument":"VIOLIN",
-                      "level":"BEGINNER"
-                      }
-                      ]
-            },
-            {
-            "id":3,
-            "firstName":"Gandalf",
-            "lastName":"Grey",
-            "email":"grey@gmail.com",
-            "gender":"MALE",
-            "location":"New York",
-            "dateOfBirth":"1990-02-28",
-            "skills":[
-                      {
-                      "id":3,
-                      "instrument":"DRUMS",
-                      "level":"BEGINNER"
-                      },
-                      {
-                      "id":4,
-                      "instrument":"PIANO",
-                      "level":"PROFESSIONAL"
-                      }
-                      ]
-            }
-            ]
-  }
-  ]
+{
+    "content": [
+                {
+                "id": 1,
+                "name": "Hard Rock Night",
+                "venue": {
+                "id": 1,
+                "name": "Vagon Klub",
+                "lat": 50.0822,
+                "lon": 14.418
+                },
+                "startDate": "2016-12-01 19:00",
+                "endDate": "2016-12-01 22:00",
+                "people": [
+                           {
+                           "id": 1,
+                           "firstName": "Peter",
+                           "lastName": "Smith",
+                           "email": "peter@hotmail.com",
+                           "gender": "MALE",
+                           "location": "London",
+                           "dateOfBirth": "1980-04-07",
+                           "skills": [
+                                      {
+                                      "id": 1,
+                                      "instrument": "GUITAR",
+                                      "level": "BEGINNER"
+                                      }
+                                      ]
+                           },
+                           {
+                           "id": 2,
+                           "firstName": "John",
+                           "lastName": "Doe",
+                           "email": "john@email.cz",
+                           "gender": "MALE",
+                           "location": "London",
+                           "dateOfBirth": "1985-06-11",
+                           "skills": [
+                                      {
+                                      "id": 2,
+                                      "instrument": "BASS",
+                                      "level": "ADVANCED"
+                                      }
+                                      ]
+                           }
+                           ]
+                },
+                {
+                "id": 2,
+                "name": "Christmas Chill",
+                "venue": {
+                "id": 2,
+                "name": "Rudolfinum",
+                "lat": 50.0899,
+                "lon": 14.4154
+                },
+                "startDate": "2016-12-24 18:00",
+                "endDate": "2016-12-24 21:00",
+                "people": [
+                           {
+                           "id": 3,
+                           "firstName": "Gandalf",
+                           "lastName": "Grey",
+                           "email": "grey@gmail.com",
+                           "gender": "MALE",
+                           "location": "New York",
+                           "dateOfBirth": "1990-02-28",
+                           "skills": [
+                                      {
+                                      "id": 4,
+                                      "instrument": "PIANO",
+                                      "level": "PROFESSIONAL"
+                                      },
+                                      {
+                                      "id": 3,
+                                      "instrument": "DRUMS",
+                                      "level": "BEGINNER"
+                                      }
+                                      ]
+                           },
+                           {
+                           "id": 4,
+                           "firstName": "Gandal",
+                           "lastName": "White",
+                           "email": "white@gmail.com",
+                           "gender": "MALE",
+                           "location": "Mordor",
+                           "dateOfBirth": "1978-06-05",
+                           "skills": [
+                                      {
+                                      "id": 5,
+                                      "instrument": "GUITAR",
+                                      "level": "ADVANCED"
+                                      },
+                                      {
+                                      "id": 6,
+                                      "instrument": "VIOLIN",
+                                      "level": "BEGINNER"
+                                      }
+                                      ]
+                           }
+                           ]
+                }
+                ],
+    "last": true,
+    "totalElements": 2,
+    "totalPages": 1,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 2,
+    "size": 20,
+    "number": 0
+}
