@@ -2,21 +2,21 @@ platform :ios, '9.0'
 use_frameworks!
 
 target "Gigsterous" do
-	pod 'MBProgressHUD', '~> 1.0'
-	pod 'OHHTTPStubs'
-	pod 'OHHTTPStubs/Swift'
-	pod 'ObjectMapper', '~> 2.0'
-	pod 'Moya', '8.0.0-beta.4'
+    pod 'MBProgressHUD', '~> 1.0'
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
+    pod 'ObjectMapper', '~> 2.0'
+    pod 'Moya', '8.0.0-beta.6'
     pod 'Bond', '~> 5.0'
     pod 'Fabric'
     pod 'Crashlytics'
 end
 
 target "GigsterousTests" do
-	pod 'OHHTTPStubs'
-	pod 'OHHTTPStubs/Swift'
-	pod 'ObjectMapper', '~> 2.0'
-	pod 'Moya', '8.0.0-beta.4'
+    pod 'OHHTTPStubs'
+    pod 'OHHTTPStubs/Swift'
+    pod 'ObjectMapper', '~> 2.0'
+    pod 'Moya', '8.0.0-beta.6'
     pod 'Bond', '~> 5.0'
 end
 
