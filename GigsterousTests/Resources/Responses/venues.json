@@ -1,0 +1,24 @@
+{
+    "content": [
+                {
+                "id": 1,
+                "name": "Vagon Klub",
+                "lat": 50.0822,
+                "lon": 14.418
+                },
+                {
+                "id": 2,
+                "name": "Rudolfinum",
+                "lat": 50.0899,
+                "lon": 14.4154
+                }
+                ],
+    "last": true,
+    "totalPages": 1,
+    "totalElements": 2,
+    "sort": null,
+    "first": true,
+    "numberOfElements": 2,
+    "size": 20,
+    "number": 0
+}
