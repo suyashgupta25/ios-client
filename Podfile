@@ -6,6 +6,7 @@ target "Gigsterous" do
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
     pod 'ObjectMapper', '~> 2.0'
+    pod 'AlamofireObjectMapper', '~> 4.0'
     pod 'Moya', '8.0.0-beta.6'
     pod 'Bond', '~> 5.0'
     pod 'Fabric'
@@ -16,6 +17,7 @@ target "GigsterousTests" do
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
     pod 'ObjectMapper', '~> 2.0'
+    pod 'AlamofireObjectMapper', '~> 4.0'
     pod 'Moya', '8.0.0-beta.6'
     pod 'Bond', '~> 5.0'
 end
