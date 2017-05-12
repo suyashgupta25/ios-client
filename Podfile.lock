@@ -1,18 +1,20 @@
 PODS:
-  - Alamofire (4.2.0)
+  - Alamofire (4.3.0)
   - AlamofireObjectMapper (4.0.1):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
-  - Bond (5.3.1):
-    - ReactiveKit (~> 3.1)
+  - Bond (5.4.6):
+    - Diff (~> 0.4)
+    - ReactiveKit (~> 3.2)
   - Crashlytics (3.8.3):
     - Fabric (~> 1.6.3)
+  - Diff (0.5.0)
   - Fabric (1.6.11)
   - MBProgressHUD (1.0.0)
-  - Moya (8.0.0-beta.6):
-    - Moya/Core (= 8.0.0-beta.6)
-  - Moya/Core (8.0.0-beta.6):
-    - Alamofire (~> 4.0)
+  - Moya (8.0.2):
+    - Moya/Core (= 8.0.2)
+  - Moya/Core (8.0.2):
+    - Alamofire (~> 4.1)
     - Result (~> 3.0)
   - ObjectMapper (2.2.2)
   - OHHTTPStubs (5.2.3):
@@ -30,7 +32,7 @@ PODS:
   - OHHTTPStubs/OHPathHelpers (5.2.3)
   - OHHTTPStubs/Swift (5.2.3):
     - OHHTTPStubs/Core
-  - ReactiveKit (3.1.1)
+  - ReactiveKit (3.3.0)
   - Result (3.1.0)
 
 DEPENDENCIES:
@@ -39,24 +41,25 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - MBProgressHUD (~> 1.0)
-  - Moya (= 8.0.0-beta.6)
+  - Moya
   - ObjectMapper (~> 2.0)
   - OHHTTPStubs
   - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
-  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
   AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
-  Bond: 4e67616dedd6515adbe25ad360848e73f3a142a1
+  Bond: 7cc794569520e611e46d7d77c35d568a6b5ded00
   Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
+  Diff: eceb93a3adf508574ba9b8560da185ace83de055
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  Moya: a29e2503a0c5067d462ba2f07cc6b6b1f3fc172d
+  Moya: 47f61da5b634aa71f676431b64ee0f81e976296d
   ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
   OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
-  ReactiveKit: e830df3deeb6cdf2acd18cee5cf07cb25488ae4e
+  ReactiveKit: 56a5b949847ba137da40045149785e569f292e07
   Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
 
-PODFILE CHECKSUM: cb4ad281c62803c988b9a3e3fd55800067a9496b
+PODFILE CHECKSUM: f7df727817ef467975a0f7a423334b131152c7ec
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
