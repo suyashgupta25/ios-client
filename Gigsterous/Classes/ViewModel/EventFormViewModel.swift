@@ -63,7 +63,7 @@ class EventFormViewModel {
     func generateEventObject() -> Event {
         let event = Event()
         event.name = self.name.value
-        event.venue = self.venue.value
+        //event.venue = self.venue.value
         event.startDate = self.startDate.value
         event.endDate = self.endDate.value
         return event
