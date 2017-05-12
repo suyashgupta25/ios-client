@@ -8,7 +8,6 @@ target "Gigsterous" do
     pod 'OHHTTPStubs/Swift'
     pod 'ObjectMapper', '~> 2.0'
     pod 'AlamofireObjectMapper', '~> 4.0'
-    pod 'Moya'
     pod 'Bond', '~> 6.0'
     pod 'Fabric'
     pod 'Crashlytics'

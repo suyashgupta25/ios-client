@@ -11,11 +11,6 @@ PODS:
   - Diff (0.5.3)
   - Fabric (1.6.11)
   - MBProgressHUD (1.0.0)
-  - Moya (8.0.3):
-    - Moya/Core (= 8.0.3)
-  - Moya/Core (8.0.3):
-    - Alamofire (~> 4.1)
-    - Result (~> 3.0)
   - ObjectMapper (2.2.5)
   - OHHTTPStubs (6.0.0):
     - OHHTTPStubs/Default (= 6.0.0)
@@ -33,7 +28,6 @@ PODS:
   - OHHTTPStubs/Swift (6.0.0):
     - OHHTTPStubs/Default
   - ReactiveKit (3.5.1)
-  - Result (3.2.1)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 4.0)
@@ -41,7 +35,6 @@ DEPENDENCIES:
   - Crashlytics
   - Fabric
   - MBProgressHUD (~> 1.0)
-  - Moya
   - ObjectMapper (~> 2.0)
   - OHHTTPStubs
   - OHHTTPStubs/Swift
@@ -54,12 +47,10 @@ SPEC CHECKSUMS:
   Diff: befa1d19c32726b2b36ce915d98793e2fbde8dcc
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
   ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
   OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
   ReactiveKit: aa0faf668053e7fddd6a07829ba3696741cbff37
-  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
 
-PODFILE CHECKSUM: 52aaaf612e17fb75a29e438b4d97b127305b2472
+PODFILE CHECKSUM: 036fb1447d9f82c3a97bbda7433cd1ded8d473d3
 
 COCOAPODS: 1.2.1
