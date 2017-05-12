@@ -12,7 +12,6 @@ before_script:
 before_install:
   - brew update
   - brew install swiftlint || true
-  - pod update Moya
 
 script:
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test; fi
