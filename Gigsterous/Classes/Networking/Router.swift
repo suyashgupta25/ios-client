@@ -34,15 +34,21 @@ enum Router: URLRequestConvertible {
     var method: Alamofire.HTTPMethod {
         switch self {
         case .people, .ensembles, .events, .venues:
-            return .post
+            return .get
         }
     }
     
     /// URL path for given case.
     var path: String {
         switch self {
-        case .people, .ensembles, .events, .venues:
-            return ""
+        case .events:
+            return "/events"
+        case .people:
+            return "/people"
+        case .ensembles:
+            return "/ensembles"
+        case .venues:
+            return "/venues"
         }
     }
     
