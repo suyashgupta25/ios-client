@@ -52,6 +52,11 @@
 		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002E0681DA6514400232A4D /* EventFormViewController.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
+		E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */; };
+		E042AAC01EC6245700C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
+		E042AAC11EC624E100C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
+		E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
+		E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
@@ -130,6 +135,9 @@
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		E002E0681DA6514400232A4D /* EventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
+		E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsTableViewModel.swift; path = ViewModel/EventsTableViewModel.swift; sourceTree = "<group>"; };
+		E042AABF1EC6245700C51291 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = Model/Venue.swift; sourceTree = "<group>"; };
+		E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewModel.swift; path = ViewModel/EnsemblesTableViewModel.swift; sourceTree = "<group>"; };
 		E081746D1E087BD30077C0C8 /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveClient.swift; path = Networking/ReactiveClient.swift; sourceTree = "<group>"; };
@@ -221,6 +229,7 @@
 				C1FD6BE81D95051000E11288 /* Skill.swift */,
 				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
 				C12FA0EE1D93A224005A056D /* Event.swift */,
+				E042AABF1EC6245700C51291 /* Venue.swift */,
 				E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */,
 			);
 			name = Model;
@@ -229,10 +238,8 @@
 		C12FA0EC1D93A206005A056D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E0E25A481E0D2339006F8C14 /* tmp */,
-				C12FA0F31D93A22E005A056D /* Client.swift */,
-				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
-				C1FD6BE21D9436EC00E11288 /* API.swift */,
+				E042AABC1EC61F9300C51291 /* _OLD */,
+				E0E25A481E0D2339006F8C14 /* NEW */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -359,22 +366,34 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
+		E042AABC1EC61F9300C51291 /* _OLD */ = {
+			isa = PBXGroup;
+			children = (
+				C12FA0F31D93A22E005A056D /* Client.swift */,
+				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
+				C1FD6BE21D9436EC00E11288 /* API.swift */,
+			);
+			name = _OLD;
+			sourceTree = "<group>";
+		};
 		E0C2CA0F1DC3956100779C7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */,
+				E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */,
+				E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
 		};
-		E0E25A481E0D2339006F8C14 /* tmp */ = {
+		E0E25A481E0D2339006F8C14 /* NEW */ = {
 			isa = PBXGroup;
 			children = (
 				E0E25A451E0D22A9006F8C14 /* Router.swift */,
 				E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */,
 				E0E25A421E0C4A73006F8C14 /* AFClient.swift */,
 			);
-			name = tmp;
+			name = NEW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -646,6 +665,7 @@
 				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
 				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
+				E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
 				E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */,
@@ -653,7 +673,9 @@
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
 				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
 				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
+				E042AAC01EC6245700C51291 /* Venue.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
+				E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */,
 				E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
 				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
@@ -681,6 +703,8 @@
 				E0E25A4C1E0D3D06006F8C14 /* ReactiveClient.swift in Sources */,
 				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
 				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
+				E042AAC11EC624E100C51291 /* Venue.swift in Sources */,
+				E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
 				C11D16E11D942D33000C874E /* ClientMock.swift in Sources */,
 				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
 				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
