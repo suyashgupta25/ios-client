@@ -9,15 +9,11 @@
 /* Begin PBXBuildFile section */
 		455F411581D5333E7957F964 /* Pods_Gigsterous_GigsterousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 399A2BF62D309C9AE4585405 /* Pods_Gigsterous_GigsterousTests.framework */; };
 		AD347A8A98F7C7B11CF984AE /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A053165762657162EDA243E3 /* Pods_Gigsterous.framework */; };
-		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
-		C11D16E01D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
-		C11D16E11D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
 		C11D16E31D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
 		C11D16E41D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
 		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
 		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
 		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
-		C12FA0F41D93A22E005A056D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
 		C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C12FA0FC1D93A26A005A056D /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
 		C12FA0FD1D93A26A005A056D /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
@@ -41,10 +37,6 @@
 		C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
 		C1FD6BDD1D94348900E11288 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
 		C1FD6BDE1D94348900E11288 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
-		C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
-		C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
-		C1FD6BE31D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
-		C1FD6BE41D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
 		C1FD6BE51D9482F500E11288 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
 		C1FD6BE61D9482F800E11288 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
 		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
@@ -98,12 +90,10 @@
 		A053165762657162EDA243E3 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A340CF8C3BAC6DED2F1B2EDD /* Pods-Gigsterous-GigsterousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous-GigsterousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous-GigsterousTests/Pods-Gigsterous-GigsterousTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A95C6DE282102FDC4F9804F1 /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		C11D16DF1D942D33000C874E /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
 		C11D16E21D94325D000C874E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
 		C12FA0EE1D93A224005A056D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
 		C12FA0EF1D93A224005A056D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
-		C12FA0F31D93A22E005A056D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Networking/Client.swift; sourceTree = "<group>"; };
 		C12FA0F81D93A26A005A056D /* ensembles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ensembles.json; sourceTree = "<group>"; };
 		C12FA0F91D93A26A005A056D /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		C12FA0FA1D93A26A005A056D /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
@@ -130,8 +120,6 @@
 		C1F0F4531D24249C004124E2 /* GigsterousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousUITests.swift; sourceTree = "<group>"; };
 		C1F0F4591D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
-		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
 		E002E0681DA6514400232A4D /* EventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
@@ -238,8 +226,9 @@
 		C12FA0EC1D93A206005A056D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				E042AABC1EC61F9300C51291 /* _OLD */,
-				E0E25A481E0D2339006F8C14 /* NEW */,
+				E0E25A451E0D22A9006F8C14 /* Router.swift */,
+				E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */,
+				E0E25A421E0C4A73006F8C14 /* AFClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -294,7 +283,6 @@
 		C1AF4BDE1D918CA600516BC7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C11D16DF1D942D33000C874E /* ClientMock.swift */,
 				C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */,
 			);
 			path = Classes;
@@ -366,16 +354,6 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
-		E042AABC1EC61F9300C51291 /* _OLD */ = {
-			isa = PBXGroup;
-			children = (
-				C12FA0F31D93A22E005A056D /* Client.swift */,
-				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
-				C1FD6BE21D9436EC00E11288 /* API.swift */,
-			);
-			name = _OLD;
-			sourceTree = "<group>";
-		};
 		E0C2CA0F1DC3956100779C7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -384,16 +362,6 @@
 				E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */,
 			);
 			name = ViewModel;
-			sourceTree = "<group>";
-		};
-		E0E25A481E0D2339006F8C14 /* NEW */ = {
-			isa = PBXGroup;
-			children = (
-				E0E25A451E0D22A9006F8C14 /* Router.swift */,
-				E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */,
-				E0E25A421E0C4A73006F8C14 /* AFClient.swift */,
-			);
-			name = NEW;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -662,23 +630,19 @@
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
 				E0E25A4A1E0D2B46006F8C14 /* ResponseObject.swift in Sources */,
-				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
 				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
 				E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
 				E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */,
-				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
 				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
-				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
 				E042AAC01EC6245700C51291 /* Venue.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
 				E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */,
 				E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
-				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
 				C1FD6BE91D95051000E11288 /* Skill.swift in Sources */,
 				E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */,
@@ -697,15 +661,11 @@
 				E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */,
 				E0E25A4B1E0D2B8E006F8C14 /* ResponseObject.swift in Sources */,
 				E0E25A441E0C515B006F8C14 /* AFClient.swift in Sources */,
-				C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */,
-				C1FD6BE41D9436EC00E11288 /* API.swift in Sources */,
-				C11D16DE1D94249F000C874E /* Client.swift in Sources */,
 				E0E25A4C1E0D3D06006F8C14 /* ReactiveClient.swift in Sources */,
 				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
 				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
 				E042AAC11EC624E100C51291 /* Venue.swift in Sources */,
 				E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
-				C11D16E11D942D33000C874E /* ClientMock.swift in Sources */,
 				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
 				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
 				E0E25A471E0D22AC006F8C14 /* Router.swift in Sources */,
