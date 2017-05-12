@@ -35,7 +35,7 @@ class AFClient: NSObject {
     }
     
     func disp<T: Mappable>(request: URLRequestConvertible, result: @escaping (_ content: [T], _ error: Error?) -> Void) {
-        let request = Alamofire.request(request).responseObject() {
+        let req = Alamofire.request(request).responseObject() {
             (response: DataResponse<ResponseObject<T>>) -> Void in
             switch response.result {
             case .success(let value):
@@ -47,7 +47,8 @@ class AFClient: NSObject {
                 break
             }
         }
-        request.resume()
+        
+        req.resume()
     }
     
     ///
