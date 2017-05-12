@@ -13,7 +13,7 @@ import ObjectMapper
 class Event: Mappable {
     var id: Int!
     var name: String!
-    var venue: String!
+    var venue: Venue!
     var startDate: Date!
     var endDate: Date!
     var people: [Person]!
