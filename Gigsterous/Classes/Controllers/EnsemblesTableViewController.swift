@@ -7,89 +7,63 @@
 //
 
 import UIKit
+import Bond
 
 /// Ensembles screen showing user's associated acts.
 class EnsemblesTableViewController: UITableViewController {
     var customRefreshControl: UIRefreshControl!
-    var ensembles: [Ensemble] = []
+    let viewModel = EnsemblesTableViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.navigationItem.title = NSLocalizedString("ENSEMBLES", comment: "")
-        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        self.customRefreshControl = UIRefreshControl()
-        self.customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
-        self.customRefreshControl.addTarget(self, action: #selector(EnsemblesTableViewController.refreshControlPulled), for: UIControlEvents.valueChanged)
-        self.tableView.addSubview(customRefreshControl)
+        setupTableView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        self.refreshData(success: nil)
+        self.viewModel.refreshData(reload: true, success: nil)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    // MARK: - IBActions
-    
-    /// Selector method called when UIRefreshControl is pulled.
-    func refreshControlPulled() {
-        // Show loading bar
-        self.refreshData {
-            // Hide loading bar
-            self.customRefreshControl.endRefreshing()
-        }
-    }
-    
-    // MARK: - Internal methods
-    
-    /// Gets called after UIRefreshControl has been pulled and released. Performs update of the UI - downloads the latest data, saves it and refreshes the UI.
     ///
-    /// - Parameter success: Optional closure performed after loading has been performed.
-    func refreshData(success: (() -> Void)?) {
-        ClientMock.sharedInstance.ensembles({ (ensembles: [Ensemble]) in
-            self.ensembles = ensembles
-            self.tableView.reloadData()
-            success?()
-        }) { (error: NSError) in
-            print("doh")
-            success?()
-        }
-    }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in: UITableView) -> Int {
-        return 1
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.ensembles.count
-    }
-    
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ensembleCell", for: indexPath as IndexPath)
-        let ensembleData = self.ensembles[indexPath.row]
+    func setupTableView() {
+        self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         
-        if let name = cell.viewWithTag(1) as? UILabel {
-            name.text = String(ensembleData.name)
+        self.viewModel.ensembles.bind(to: self.tableView) { ens, indexPath, tableView in
+            let cell = tableView.dequeueReusableCell(withIdentifier: "ensembleCell", for: indexPath as IndexPath)
+            let ensembleData = ens[indexPath.row]
+            
+            if let name = cell.viewWithTag(1) as? UILabel {
+                name.text = String(ensembleData.name)
+            }
+            
+            if let ensembleType = cell.viewWithTag(2) as? UILabel {
+                ensembleType.text = ensembleData.ensembleType
+            }
+            
+            if let musicians = cell.viewWithTag(3) as? UILabel {
+                musicians.text = "\(ensembleData.people.count) musicians"
+            }
+            
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
+            
+            return cell
         }
         
-        if let ensembleType = cell.viewWithTag(2) as? UILabel {
-            ensembleType.text = ensembleData.ensembleType
+        customRefreshControl = UIRefreshControl()
+        customRefreshControl.attributedTitle = NSAttributedString(string: NSLocalizedString("PULL2REFRESH", comment: ""))
+        _ = customRefreshControl.reactive.controlEvents(UIControlEvents.valueChanged).observeNext {
+            self.viewModel.refreshData(reload: true) {
+                self.customRefreshControl.endRefreshing()
+            }
         }
-        
-        if let musicians = cell.viewWithTag(3) as? UILabel {
-            musicians.text = "\(ensembleData.people.count) musicians"
-        }
-        
-        cell.preservesSuperviewLayoutMargins = false
-        cell.separatorInset = UIEdgeInsets.zero
-        cell.layoutMargins = UIEdgeInsets.zero
-        
-        return cell
+        tableView.addSubview(customRefreshControl)
     }
 }
