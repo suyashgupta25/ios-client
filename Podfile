@@ -9,12 +9,12 @@ target "Gigsterous" do
     pod 'ObjectMapper', '~> 2.0'
     pod 'AlamofireObjectMapper', '~> 4.0'
     pod 'Moya'
-    pod 'Bond', '~> 5.0'
+    pod 'Bond', '~> 6.0'
     pod 'Fabric'
     pod 'Crashlytics'
 
     target "GigsterousTests" do
-        inherit! :search_paths
+        inherit! :complete
     
         pod 'OHHTTPStubs'
         pod 'OHHTTPStubs/Swift'
@@ -24,6 +24,7 @@ target "Gigsterous" do
         installer.pods_project.targets.each do |target|
             target.build_configurations.each do |config|
                 config.build_settings['SWIFT_VERSION'] = '3.0'
+                config.build_settings['CLANG_ENABLE_CODE_COVERAGE'] = 'NO'
             end
         end
     end

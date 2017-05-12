@@ -1,43 +1,43 @@
 PODS:
-  - Alamofire (4.3.0)
-  - AlamofireObjectMapper (4.0.1):
+  - Alamofire (4.4.0)
+  - AlamofireObjectMapper (4.1.0):
     - Alamofire (~> 4.1)
     - ObjectMapper (~> 2.0)
-  - Bond (5.4.6):
+  - Bond (6.2.5):
     - Diff (~> 0.4)
-    - ReactiveKit (~> 3.2)
-  - Crashlytics (3.8.3):
+    - ReactiveKit (~> 3.5.1)
+  - Crashlytics (3.8.4):
     - Fabric (~> 1.6.3)
-  - Diff (0.5.0)
+  - Diff (0.5.3)
   - Fabric (1.6.11)
   - MBProgressHUD (1.0.0)
-  - Moya (8.0.2):
-    - Moya/Core (= 8.0.2)
-  - Moya/Core (8.0.2):
+  - Moya (8.0.3):
+    - Moya/Core (= 8.0.3)
+  - Moya/Core (8.0.3):
     - Alamofire (~> 4.1)
     - Result (~> 3.0)
-  - ObjectMapper (2.2.2)
-  - OHHTTPStubs (5.2.3):
-    - OHHTTPStubs/Default (= 5.2.3)
-  - OHHTTPStubs/Core (5.2.3)
-  - OHHTTPStubs/Default (5.2.3):
+  - ObjectMapper (2.2.5)
+  - OHHTTPStubs (6.0.0):
+    - OHHTTPStubs/Default (= 6.0.0)
+  - OHHTTPStubs/Core (6.0.0)
+  - OHHTTPStubs/Default (6.0.0):
     - OHHTTPStubs/Core
     - OHHTTPStubs/JSON
     - OHHTTPStubs/NSURLSession
     - OHHTTPStubs/OHPathHelpers
-  - OHHTTPStubs/JSON (5.2.3):
+  - OHHTTPStubs/JSON (6.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/NSURLSession (5.2.3):
+  - OHHTTPStubs/NSURLSession (6.0.0):
     - OHHTTPStubs/Core
-  - OHHTTPStubs/OHPathHelpers (5.2.3)
-  - OHHTTPStubs/Swift (5.2.3):
-    - OHHTTPStubs/Core
-  - ReactiveKit (3.3.0)
-  - Result (3.1.0)
+  - OHHTTPStubs/OHPathHelpers (6.0.0)
+  - OHHTTPStubs/Swift (6.0.0):
+    - OHHTTPStubs/Default
+  - ReactiveKit (3.5.1)
+  - Result (3.2.1)
 
 DEPENDENCIES:
   - AlamofireObjectMapper (~> 4.0)
-  - Bond (~> 5.0)
+  - Bond (~> 6.0)
   - Crashlytics
   - Fabric
   - MBProgressHUD (~> 1.0)
@@ -47,19 +47,19 @@ DEPENDENCIES:
   - OHHTTPStubs/Swift
 
 SPEC CHECKSUMS:
-  Alamofire: 856a113053a7bc9cbe5d6367a555d773fc5cfef7
-  AlamofireObjectMapper: 842d2eed43a4d0593ff0110d54ac86a170c4519c
-  Bond: 7cc794569520e611e46d7d77c35d568a6b5ded00
-  Crashlytics: 2b6dbe138a42395577cfa73dfa1aa7248cadf39e
-  Diff: eceb93a3adf508574ba9b8560da185ace83de055
+  Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
+  AlamofireObjectMapper: 435adc82f5b367679bd9e71c4974a54efd0b2521
+  Bond: 30598a79d741c8d55cb414e1b538ef4b3110c1a0
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Diff: befa1d19c32726b2b36ce915d98793e2fbde8dcc
   Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  Moya: 47f61da5b634aa71f676431b64ee0f81e976296d
-  ObjectMapper: 9e385c2295bcc4e16eabbcfc85db801442bba545
-  OHHTTPStubs: e238cd5b66d8efa51c861db45895de8fe079f4a7
-  ReactiveKit: 56a5b949847ba137da40045149785e569f292e07
-  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
+  Moya: d3721622e3cc0cc2f038d69a258686f0b66e7252
+  ObjectMapper: fb30f71e08470d1e5a20b199fafe1246281db898
+  OHHTTPStubs: 752f9b11fd810a15162d50f11c06ff94f8e012eb
+  ReactiveKit: aa0faf668053e7fddd6a07829ba3696741cbff37
+  Result: 2453a22e5c5b11c0c3a478736e82cd02f763b781
 
-PODFILE CHECKSUM: f7df727817ef467975a0f7a423334b131152c7ec
+PODFILE CHECKSUM: 52aaaf612e17fb75a29e438b4d97b127305b2472
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

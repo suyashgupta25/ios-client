@@ -62,7 +62,7 @@ class EventFormViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.eventViewModel.name.bind(to: self.navigationItem.bnd_title)
+        self.eventViewModel.name.bind(to: self.navigationItem.reactive.title)
         
         self.tableView.tableFooterView = UIView(frame: CGRect.zero)
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(EventFormViewController.cancelButtonPressed))
@@ -76,7 +76,7 @@ class EventFormViewController: UITableViewController {
             let dateConsistency = start.compare(end) == .orderedAscending
             
             return nameCheck && venueCheck && dateConsistency
-            }.bind(to: self.navigationItem.rightBarButtonItem!.bnd_isEnabled)
+            }.bind(to: self.navigationItem.rightBarButtonItem!.reactive.isEnabled)
     }
 
     override func didReceiveMemoryWarning() {
@@ -149,16 +149,16 @@ class EventFormViewController: UITableViewController {
                 
                 if indexPath.row == 0 {
                     datePicker.setDate(self.eventViewModel.startDate.value, animated: false)
-                    datePicker.bnd_date.bidirectionalBind(to: self.eventViewModel.startDate)
+                    datePicker.reactive.date.bidirectionalBind(to: self.eventViewModel.startDate)
                     self.eventViewModel.startDate
                         .map{$0.humanReadableString()}
-                        .bind(to: label.bnd_text)
+                        .bind(to: label.reactive.text)
                 } else {
                     datePicker.setDate(self.eventViewModel.endDate.value, animated: false)
-                    datePicker.bnd_date.bidirectionalBind(to: self.eventViewModel.endDate)
+                    datePicker.reactive.date.bidirectionalBind(to: self.eventViewModel.endDate)
                     self.eventViewModel.endDate
                         .map{$0.humanReadableString()}
-                        .bind(to: label.bnd_text)
+                        .bind(to: label.reactive.text)
                 }
             break
             case "textInput":
@@ -166,10 +166,10 @@ class EventFormViewController: UITableViewController {
                 
                 if indexPath.row == 0 {
                     textField.text = self.eventViewModel.name.value
-                    textField.bnd_text.bind(to: self.eventViewModel.name)
+                    textField.reactive.text.bind(to: self.eventViewModel.name)
                 } else {
                     textField.text = self.eventViewModel.venue.value
-                    textField.bnd_text.bind(to: self.eventViewModel.venue)
+                    textField.reactive.text.bind(to: self.eventViewModel.venue)
                 }
             break
         default:
