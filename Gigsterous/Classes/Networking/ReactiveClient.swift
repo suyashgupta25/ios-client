@@ -24,6 +24,21 @@ class ReactiveClient {
         return signal(request: Router.people([:]))
     }
     
+    ///
+    func eventsSignal() -> Signal<[Event], TestError> {
+        return signal(request: Router.events([:]))
+    }
+    
+    ///
+    func ensemblesSignal() -> Signal<[Ensemble], TestError> {
+        return signal(request: Router.ensembles([:]))
+    }
+    
+    ///
+    func venuesSignal() -> Signal<[Venue], TestError> {
+        return signal(request: Router.venues([:]))
+    }
+    
     func signal<T: Mappable>(request: URLRequestConvertible) -> Signal<[T], TestError> {
         return Signal { observer in
             
