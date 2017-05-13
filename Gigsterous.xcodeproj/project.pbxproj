@@ -48,11 +48,13 @@
 		E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
 		E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
 		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
+		E05ADE1C1EC7546C0086C9C3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5EA4A1DC6663000700C56 /* DateExtension.swift */; };
 		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
 		E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */; };
 		E0CDDDFA1EC751A0000175C4 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
+		E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */; };
 		E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */; };
 		E0E25A431E0C4A73006F8C14 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A421E0C4A73006F8C14 /* AFClient.swift */; };
 		E0E25A441E0C515B006F8C14 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A421E0C4A73006F8C14 /* AFClient.swift */; };
@@ -130,6 +132,7 @@
 		E081746D1E087BD30077C0C8 /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionTests.swift; path = Helpers/IndexPathExtensionTests.swift; sourceTree = "<group>"; };
+		E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionTests.swift; path = Helpers/DateExtensionTests.swift; sourceTree = "<group>"; };
 		E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveClient.swift; path = Networking/ReactiveClient.swift; sourceTree = "<group>"; };
 		E0E25A421E0C4A73006F8C14 /* AFClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AFClient.swift; path = Networking/AFClient.swift; sourceTree = "<group>"; };
 		E0E25A451E0D22A9006F8C14 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Networking/Router.swift; sourceTree = "<group>"; };
@@ -373,6 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */,
+				E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -691,6 +695,8 @@
 				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
 				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
 				E0E25A471E0D22AC006F8C14 /* Router.swift in Sources */,
+				E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */,
+				E05ADE1C1EC7546C0086C9C3 /* DateExtension.swift in Sources */,
 				E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */,
 				C1FD6BDD1D94348900E11288 /* Event.swift in Sources */,
 				C11D16E41D94325D000C874E /* Constants.swift in Sources */,
