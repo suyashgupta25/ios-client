@@ -7,6 +7,7 @@
 #### Develop Branch
 
 [![Build Status](https://travis-ci.org/gigsterous/ios-client.svg?branch=develop)](https://travis-ci.org/gigsterous/ios-client)
+[![codecov](https://codecov.io/gh/gigsterous/ios-client/branch/develop/graph/badge.svg)](https://codecov.io/gh/gigsterous/ios-client)
 
 
 ## Development Workflow
