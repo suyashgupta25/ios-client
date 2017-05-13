@@ -35,16 +35,17 @@ class AFClient: NSObject {
     }
     
     func disp<T: Mappable>(request: URLRequestConvertible, result: @escaping (_ content: [T], _ error: Error?) -> Void) {
-        let req = Alamofire.request(request).responseObject() {
-            (response: DataResponse<ResponseObject<T>>) -> Void in
-            switch response.result {
-            case .success(let value):
-                let content = value.content ?? []
-                result(content, nil)
-                break
-            case .failure(let error):
-                result([], error)
-                break
+        let req = Alamofire
+            .request(request)
+            .responseObject { (response: DataResponse<ResponseObject<T>>) -> Void in
+                switch response.result {
+                case .success(let value):
+                    let content = value.content ?? []
+                    result(content, nil)
+                    break
+                case .failure(let error):
+                    result([], error)
+                    break
             }
         }
         

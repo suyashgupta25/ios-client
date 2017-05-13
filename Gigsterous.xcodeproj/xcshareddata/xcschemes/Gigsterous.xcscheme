@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0830"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "31962D7CD1D8DE5041F5ED6FCD6873E4"
+               BlueprintIdentifier = "570FE155D494D8993C773A77CAD695B1"
                BuildableName = "Pods_Gigsterous.framework"
                BlueprintName = "Pods-Gigsterous"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">

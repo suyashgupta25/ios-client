@@ -43,7 +43,7 @@ class EventFormViewController: UITableViewController {
         ["sectionName": "AUDITIONS",
          "cells": [
             ["name": "ADD_AUDITION", "type": "addInput"]]
-        ],
+        ]
     ]
     
     /// Parses and returns the structure of a cell at given indexPath
@@ -68,8 +68,7 @@ class EventFormViewController: UITableViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(EventFormViewController.cancelButtonPressed))
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(EventFormViewController.doneButtonPressed))
         
-        combineLatest(self.eventViewModel.name, self.eventViewModel.venue, self.eventViewModel.startDate, self.eventViewModel.endDate) {
-            name, venue, start, end in
+        combineLatest(self.eventViewModel.name, self.eventViewModel.venue, self.eventViewModel.startDate, self.eventViewModel.endDate) { name, venue, start, end in
             
             let nameCheck = name != nil && name != ""
             let venueCheck = venue != nil && venue != ""
@@ -151,13 +150,13 @@ class EventFormViewController: UITableViewController {
                     datePicker.setDate(self.eventViewModel.startDate.value, animated: false)
                     datePicker.reactive.date.bidirectionalBind(to: self.eventViewModel.startDate)
                     self.eventViewModel.startDate
-                        .map{$0.humanReadableString()}
+                        .map {$0.humanReadableString()}
                         .bind(to: label.reactive.text)
                 } else {
                     datePicker.setDate(self.eventViewModel.endDate.value, animated: false)
                     datePicker.reactive.date.bidirectionalBind(to: self.eventViewModel.endDate)
                     self.eventViewModel.endDate
-                        .map{$0.humanReadableString()}
+                        .map {$0.humanReadableString()}
                         .bind(to: label.reactive.text)
                 }
             break

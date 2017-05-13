@@ -20,7 +20,7 @@ class NavigationViewController: UINavigationController {
         self.navigationBar.barTintColor = ColorSchemes.activeColorScheme.getDominantColor()
         self.navigationBar.tintColor = ColorSchemes.activeColorScheme.getFontColor()
         self.navigationBar.titleTextAttributes = [
-            NSForegroundColorAttributeName : ColorSchemes.activeColorScheme.getFontColor()
+            NSForegroundColorAttributeName: ColorSchemes.activeColorScheme.getFontColor()
         ]
     }
     

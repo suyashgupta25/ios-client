@@ -20,40 +20,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize Fabric
         Fabric.with([Crashlytics.self])
         
-        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/events")) { request in
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/events")) { _ in
             return OHHTTPStubsResponse(
                 fileAtPath: OHPathForFile(
                     "events.json",
                     type(of: self))!,
                 statusCode: 200,
-                headers: ["Content-Type":"application/json"])
+                headers: ["Content-Type": "application/json"])
         }
         
-        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/people")) { request in
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/people")) { _ in
             return OHHTTPStubsResponse(
                 fileAtPath: OHPathForFile(
                     "people.json",
                     type(of: self))!,
                 statusCode: 200,
-                headers: ["Content-Type":"application/json"])
+                headers: ["Content-Type": "application/json"])
         }
         
-        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/ensembles")) { request in
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/ensembles")) { _ in
             return OHHTTPStubsResponse(
                 fileAtPath: OHPathForFile(
                     "ensembles.json",
                     type(of: self))!,
                 statusCode: 200,
-                headers: ["Content-Type" : "application/json"])
+                headers: ["Content-Type": "application/json"])
         }
         
-        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/venues")) { request in
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/venues")) { _ in
             return OHHTTPStubsResponse(
                 fileAtPath: OHPathForFile(
                     "venues.json",
                     type(of: self))!,
                 statusCode: 200,
-                headers: ["Content-Type" : "application/json"])
+                headers: ["Content-Type": "application/json"])
         }
     }
 

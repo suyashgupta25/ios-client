@@ -13,7 +13,7 @@ import AlamofireObjectMapper
 import ObjectMapper
 
 enum TestError: Swift.Error {
-    case Error(error: Error)
+    case error(error: Error)
 }
 
 ///
@@ -41,16 +41,15 @@ class ReactiveClient {
     
     func signal<T: Mappable>(request: URLRequestConvertible) -> Signal<[T], TestError> {
         return Signal { observer in
-            
-            AFClient.sharedInstance.disp(request: request) {
-                (content: [T], error: Error?) -> Void in
-                if let error = error {
-                    observer.failed(.Error(error: error))
-                } else {
-                    observer.completed(with: content)
+            AFClient
+                .sharedInstance
+                .disp(request: request) { (content: [T], error: Error?) -> Void in
+                    if let error = error {
+                        observer.failed(.error(error: error))
+                    } else {
+                        observer.completed(with: content)
+                    }
                 }
-            }
-            
             return NonDisposable.instance
         }
     }
