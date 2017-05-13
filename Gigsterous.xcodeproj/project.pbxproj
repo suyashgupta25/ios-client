@@ -41,6 +41,7 @@
 		E042AAC01EC6245700C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
 		E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
 		E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */; };
+		E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE211EC7843F0086C9C3 /* PersonTests.swift */; };
 		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
@@ -116,6 +117,7 @@
 		E042AABF1EC6245700C51291 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = Model/Venue.swift; sourceTree = "<group>"; };
 		E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewModel.swift; path = ViewModel/EnsemblesTableViewModel.swift; sourceTree = "<group>"; };
 		E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterTests.swift; path = Networking/RouterTests.swift; sourceTree = "<group>"; };
+		E05ADE211EC7843F0086C9C3 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = Model/PersonTests.swift; sourceTree = "<group>"; };
 		E081746D1E087BD30077C0C8 /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionTests.swift; path = Helpers/IndexPathExtensionTests.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 		C1AF4BDE1D918CA600516BC7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E05ADE201EC783C90086C9C3 /* Model */,
 				E05ADE1D1EC77E2E0086C9C3 /* Networking */,
 				E0E93D6F1EC6F15300E60A11 /* ViewModel */,
 				E0CDDDF71EC7514C000175C4 /* Helpers */,
@@ -356,6 +359,14 @@
 				E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */,
 			);
 			name = Networking;
+			sourceTree = "<group>";
+		};
+		E05ADE201EC783C90086C9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E05ADE211EC7843F0086C9C3 /* PersonTests.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		E0C2CA0F1DC3956100779C7C /* ViewModel */ = {
@@ -681,6 +692,7 @@
 			files = (
 				E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */,
 				E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */,
+				E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */,
 				E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */,
 				E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */,
 			);
