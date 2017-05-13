@@ -77,6 +77,20 @@
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C1F0F4471D24249C004124E2"
+               BuildableName = "GigsterousTests.xctest"
+               BlueprintName = "GigsterousTests"
+               ReferencedContainer = "container:Gigsterous.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
             buildForTesting = "NO"
             buildForRunning = "NO"
             buildForProfiling = "NO"

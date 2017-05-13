@@ -19,4 +19,4 @@ script:
   - swiftlint
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -J 'GigsterousTests'
+  - bash <(curl -s https://codecov.io/bash) -J 'Gigsterous'

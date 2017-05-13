@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		932BB618DE2D23596B892375 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAEA8826E7AEEE11226AF97 /* Pods_Gigsterous.framework */; };
 		C11D16E31D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
-		C11D16E41D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
 		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
 		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
 		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
@@ -32,39 +31,25 @@
 		C1F0F43F1D24249C004124E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F43E1D24249C004124E2 /* Assets.xcassets */; };
 		C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4401D24249C004124E2 /* LaunchScreen.storyboard */; };
 		C1F0F4581D24249C004124E2 /* GigsterousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */; };
-		C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
-		C1FD6BDD1D94348900E11288 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
-		C1FD6BDE1D94348900E11288 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
 		C1FD6BE51D9482F500E11288 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
 		C1FD6BE61D9482F800E11288 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
 		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
-		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002E0681DA6514400232A4D /* EventFormViewController.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
 		E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */; };
 		E042AAC01EC6245700C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
-		E042AAC11EC624E100C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
 		E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
-		E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
-		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
-		E05ADE1C1EC7546C0086C9C3 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5EA4A1DC6663000700C56 /* DateExtension.swift */; };
 		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
 		E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */; };
-		E0CDDDFA1EC751A0000175C4 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
 		E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */; };
 		E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */; };
 		E0E25A431E0C4A73006F8C14 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A421E0C4A73006F8C14 /* AFClient.swift */; };
-		E0E25A441E0C515B006F8C14 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A421E0C4A73006F8C14 /* AFClient.swift */; };
 		E0E25A461E0D22A9006F8C14 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A451E0D22A9006F8C14 /* Router.swift */; };
-		E0E25A471E0D22AC006F8C14 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A451E0D22A9006F8C14 /* Router.swift */; };
 		E0E25A4A1E0D2B46006F8C14 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */; };
-		E0E25A4B1E0D2B8E006F8C14 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */; };
-		E0E25A4C1E0D3D06006F8C14 /* ReactiveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */; };
 		E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E93D701EC6F18800E60A11 /* EventFormViewModelTests.swift */; };
-		E0E93D721EC6F1BC00E60A11 /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
 		E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
 		E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5EA4A1DC6663000700C56 /* DateExtension.swift */; };
 		EBEB0F557D691621FEA7A68C /* Pods_Gigsterous_GigsterousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B12BA8799CF9764E17F86 /* Pods_Gigsterous_GigsterousTests.framework */; };
@@ -683,24 +668,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */,
-				E0E25A4B1E0D2B8E006F8C14 /* ResponseObject.swift in Sources */,
-				E0E25A441E0C515B006F8C14 /* AFClient.swift in Sources */,
-				E0E25A4C1E0D3D06006F8C14 /* ReactiveClient.swift in Sources */,
 				E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */,
-				E0CDDDFA1EC751A0000175C4 /* IndexPathExtension.swift in Sources */,
-				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
-				E042AAC11EC624E100C51291 /* Venue.swift in Sources */,
-				E042AAC41EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
-				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
-				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
-				E0E25A471E0D22AC006F8C14 /* Router.swift in Sources */,
 				E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */,
-				E05ADE1C1EC7546C0086C9C3 /* DateExtension.swift in Sources */,
 				E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */,
-				C1FD6BDD1D94348900E11288 /* Event.swift in Sources */,
-				C11D16E41D94325D000C874E /* Constants.swift in Sources */,
-				E0E93D721EC6F1BC00E60A11 /* EventFormViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

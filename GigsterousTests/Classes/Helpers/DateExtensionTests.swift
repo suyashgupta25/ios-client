@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Gigsterous
 
 class DateExtensionTests: XCTestCase {
     

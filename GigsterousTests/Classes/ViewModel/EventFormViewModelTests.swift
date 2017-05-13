@@ -7,6 +7,7 @@
 //
 
 import XCTest
+@testable import Gigsterous
 
 class EventFormViewModelTests: XCTestCase {
     var viewModel: EventFormViewModel!
