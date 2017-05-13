@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0810"
+   LastUpgradeVersion = "0830"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E30CA1A9FD95C1FF06C2A8847196943B"
+               BlueprintIdentifier = "2F5622F3B18DF497981AB58C6D1FC72F"
                BuildableName = "ObjectMapper.framework"
                BlueprintName = "ObjectMapper"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "819D98B2274D0D02398DA2FD14346272"
+               BlueprintIdentifier = "748F1C7F61D88F3FB355A8E829489671"
                BuildableName = "OHHTTPStubs.framework"
                BlueprintName = "OHHTTPStubs"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DBA6001481CEA0EBA031CC5C94508FAA"
+               BlueprintIdentifier = "41FA54D12162DAD51D02FC58A2CD5034"
                BuildableName = "MBProgressHUD.framework"
                BlueprintName = "MBProgressHUD"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -56,7 +56,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E81C5FAB50663D62E6CC21270E0B9C5D"
+               BlueprintIdentifier = "570FE155D494D8993C773A77CAD695B1"
                BuildableName = "Pods_Gigsterous.framework"
                BlueprintName = "Pods-Gigsterous"
                ReferencedContainer = "container:Pods/Pods.xcodeproj">
@@ -73,6 +73,20 @@
                BlueprintIdentifier = "C1F0F4311D24249C004124E2"
                BuildableName = "Gigsterous.app"
                BlueprintName = "Gigsterous"
+               ReferencedContainer = "container:Gigsterous.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C1F0F4471D24249C004124E2"
+               BuildableName = "GigsterousTests.xctest"
+               BlueprintName = "GigsterousTests"
                ReferencedContainer = "container:Gigsterous.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

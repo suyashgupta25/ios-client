@@ -7,16 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38D861DDC708A725E0E86E07 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E01F8956832288083A7052 /* Pods_Gigsterous.framework */; };
-		C11D16DE1D94249F000C874E /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
-		C11D16E01D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
-		C11D16E11D942D33000C874E /* ClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16DF1D942D33000C874E /* ClientMock.swift */; };
+		932BB618DE2D23596B892375 /* Pods_Gigsterous.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFAEA8826E7AEEE11226AF97 /* Pods_Gigsterous.framework */; };
 		C11D16E31D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
-		C11D16E41D94325D000C874E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C11D16E21D94325D000C874E /* Constants.swift */; };
 		C12FA0F01D93A224005A056D /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
 		C12FA0F11D93A224005A056D /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
 		C12FA0F21D93A224005A056D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
-		C12FA0F41D93A22E005A056D /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0F31D93A22E005A056D /* Client.swift */; };
 		C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C12FA0FC1D93A26A005A056D /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
 		C12FA0FD1D93A26A005A056D /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
@@ -35,27 +30,36 @@
 		C1F0F43D1D24249C004124E2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F43B1D24249C004124E2 /* Main.storyboard */; };
 		C1F0F43F1D24249C004124E2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F43E1D24249C004124E2 /* Assets.xcassets */; };
 		C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1F0F4401D24249C004124E2 /* LaunchScreen.storyboard */; };
-		C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */; };
 		C1F0F4581D24249C004124E2 /* GigsterousUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */; };
-		C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0ED1D93A224005A056D /* Ensemble.swift */; };
-		C1FD6BDD1D94348900E11288 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EE1D93A224005A056D /* Event.swift */; };
-		C1FD6BDE1D94348900E11288 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = C12FA0EF1D93A224005A056D /* Person.swift */; };
-		C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
-		C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BDF1D94353200E11288 /* ClientMoya.swift */; };
-		C1FD6BE31D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
-		C1FD6BE41D9436EC00E11288 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE21D9436EC00E11288 /* API.swift */; };
 		C1FD6BE51D9482F500E11288 /* people.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0FA1D93A26A005A056D /* people.json */; };
 		C1FD6BE61D9482F800E11288 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F91D93A26A005A056D /* events.json */; };
 		C1FD6BE71D9482FB00E11288 /* ensembles.json in Resources */ = {isa = PBXBuildFile; fileRef = C12FA0F81D93A26A005A056D /* ensembles.json */; };
 		C1FD6BE91D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
-		C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FD6BE81D95051000E11288 /* Skill.swift */; };
 		E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E002E0681DA6514400232A4D /* EventFormViewController.swift */; };
 		E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
-		E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = E00B93271DA2B49600A77A08 /* DateStringTransform.swift */; };
+		E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */; };
+		E042AAC01EC6245700C51291 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AABF1EC6245700C51291 /* Venue.swift */; };
+		E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */; };
+		E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */; };
+		E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE211EC7843F0086C9C3 /* PersonTests.swift */; };
+		E05ADE241EC786530086C9C3 /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE231EC786530086C9C3 /* VenueTests.swift */; };
+		E05ADE261EC787150086C9C3 /* SkillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE251EC787150086C9C3 /* SkillTests.swift */; };
+		E05ADE281EC787270086C9C3 /* EnsembleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE271EC787270086C9C3 /* EnsembleTests.swift */; };
+		E05ADE2A1EC787350086C9C3 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE291EC787350086C9C3 /* EventTests.swift */; };
+		E05ADE2C1EC78A4C0086C9C3 /* ResponseObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */; };
+		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
+		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
+		E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */; };
+		E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */; };
+		E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */; };
+		E0E25A431E0C4A73006F8C14 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A421E0C4A73006F8C14 /* AFClient.swift */; };
+		E0E25A461E0D22A9006F8C14 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A451E0D22A9006F8C14 /* Router.swift */; };
+		E0E25A4A1E0D2B46006F8C14 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */; };
+		E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E93D701EC6F18800E60A11 /* EventFormViewModelTests.swift */; };
 		E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */; };
 		E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0F5EA4A1DC6663000700C56 /* DateExtension.swift */; };
-		E2CC9211D56ABFF08F374A98 /* Pods_GigsterousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69D646BE9B77CEF568A59774 /* Pods_GigsterousTests.framework */; };
+		EBEB0F557D691621FEA7A68C /* Pods_Gigsterous_GigsterousTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C7B12BA8799CF9764E17F86 /* Pods_Gigsterous_GigsterousTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,15 +81,14 @@
 
 /* Begin PBXFileReference section */
 		12C13A8988E6893739DB0B53 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		37E01F8956832288083A7052 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AD90F61994240073DD87E34 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
-		69D646BE9B77CEF568A59774 /* Pods_GigsterousTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GigsterousTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C11D16DF1D942D33000C874E /* ClientMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientMock.swift; sourceTree = "<group>"; };
+		2C7B12BA8799CF9764E17F86 /* Pods_Gigsterous_GigsterousTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous_GigsterousTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		31F22BFA117F960674DAB2E7 /* Pods-Gigsterous.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.debug.xcconfig"; sourceTree = "<group>"; };
+		7B5BB5B7DAA85B16BE6E0A15 /* Pods-Gigsterous-GigsterousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous-GigsterousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous-GigsterousTests/Pods-Gigsterous-GigsterousTests.debug.xcconfig"; sourceTree = "<group>"; };
+		84D96D390D09F95BAA9BEABB /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
 		C11D16E21D94325D000C874E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C12FA0ED1D93A224005A056D /* Ensemble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Ensemble.swift; path = Model/Ensemble.swift; sourceTree = "<group>"; };
 		C12FA0EE1D93A224005A056D /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Model/Event.swift; sourceTree = "<group>"; };
 		C12FA0EF1D93A224005A056D /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Person.swift; path = Model/Person.swift; sourceTree = "<group>"; };
-		C12FA0F31D93A22E005A056D /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Client.swift; path = Networking/Client.swift; sourceTree = "<group>"; };
 		C12FA0F81D93A26A005A056D /* ensembles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ensembles.json; sourceTree = "<group>"; };
 		C12FA0F91D93A26A005A056D /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		C12FA0FA1D93A26A005A056D /* people.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = people.json; sourceTree = "<group>"; };
@@ -107,22 +110,36 @@
 		C1F0F4411D24249C004124E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C1F0F4431D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F0F4481D24249C004124E2 /* GigsterousTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousTests.swift; sourceTree = "<group>"; };
 		C1F0F44E1D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1F0F4531D24249C004124E2 /* GigsterousUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GigsterousUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1F0F4571D24249C004124E2 /* GigsterousUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigsterousUITests.swift; sourceTree = "<group>"; };
 		C1F0F4591D24249C004124E2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C1FD6BDF1D94353200E11288 /* ClientMoya.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ClientMoya.swift; path = Networking/ClientMoya.swift; sourceTree = "<group>"; };
-		C1FD6BE21D9436EC00E11288 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Networking/API.swift; sourceTree = "<group>"; };
 		C1FD6BE81D95051000E11288 /* Skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Skill.swift; path = Model/Skill.swift; sourceTree = "<group>"; };
-		D7EF711A089419EE23E0F191 /* Pods-GigsterousTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigsterousTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D1C546F93B442330F955F001 /* Pods-Gigsterous-GigsterousTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous-GigsterousTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous-GigsterousTests/Pods-Gigsterous-GigsterousTests.release.xcconfig"; sourceTree = "<group>"; };
 		E002E0681DA6514400232A4D /* EventFormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventFormViewController.swift; sourceTree = "<group>"; };
 		E00B93271DA2B49600A77A08 /* DateStringTransform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateStringTransform.swift; path = Model/DateStringTransform.swift; sourceTree = "<group>"; };
+		E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsTableViewModel.swift; path = ViewModel/EventsTableViewModel.swift; sourceTree = "<group>"; };
+		E042AABF1EC6245700C51291 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Venue.swift; path = Model/Venue.swift; sourceTree = "<group>"; };
+		E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsemblesTableViewModel.swift; path = ViewModel/EnsemblesTableViewModel.swift; sourceTree = "<group>"; };
+		E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterTests.swift; path = Networking/RouterTests.swift; sourceTree = "<group>"; };
+		E05ADE211EC7843F0086C9C3 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = Model/PersonTests.swift; sourceTree = "<group>"; };
+		E05ADE231EC786530086C9C3 /* VenueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTests.swift; path = Model/VenueTests.swift; sourceTree = "<group>"; };
+		E05ADE251EC787150086C9C3 /* SkillTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillTests.swift; path = Model/SkillTests.swift; sourceTree = "<group>"; };
+		E05ADE271EC787270086C9C3 /* EnsembleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsembleTests.swift; path = Model/EnsembleTests.swift; sourceTree = "<group>"; };
+		E05ADE291EC787350086C9C3 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTests.swift; path = Model/EventTests.swift; sourceTree = "<group>"; };
+		E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseObjectTests.swift; path = Model/ResponseObjectTests.swift; sourceTree = "<group>"; };
+		E081746D1E087BD30077C0C8 /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
+		E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionTests.swift; path = Helpers/IndexPathExtensionTests.swift; sourceTree = "<group>"; };
+		E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateExtensionTests.swift; path = Helpers/DateExtensionTests.swift; sourceTree = "<group>"; };
+		E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ReactiveClient.swift; path = Networking/ReactiveClient.swift; sourceTree = "<group>"; };
+		E0E25A421E0C4A73006F8C14 /* AFClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AFClient.swift; path = Networking/AFClient.swift; sourceTree = "<group>"; };
+		E0E25A451E0D22A9006F8C14 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Networking/Router.swift; sourceTree = "<group>"; };
+		E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseObject.swift; path = Model/ResponseObject.swift; sourceTree = "<group>"; };
+		E0E93D701EC6F18800E60A11 /* EventFormViewModelTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModelTests.swift; path = ViewModel/EventFormViewModelTests.swift; sourceTree = "<group>"; };
 		E0F43E181DB6A8C40087BB10 /* IndexPathExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexPathExtension.swift; sourceTree = "<group>"; };
 		E0F5EA4A1DC6663000700C56 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
-		F178591FE799970659B007BD /* Pods-Gigsterous.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gigsterous.release.xcconfig"; path = "Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous.release.xcconfig"; sourceTree = "<group>"; };
-		F7CA5D5D9CA6B3C147C2B2BE /* Pods-GigsterousTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GigsterousTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests.release.xcconfig"; sourceTree = "<group>"; };
+		EFAEA8826E7AEEE11226AF97 /* Pods_Gigsterous.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Gigsterous.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D861DDC708A725E0E86E07 /* Pods_Gigsterous.framework in Frameworks */,
+				932BB618DE2D23596B892375 /* Pods_Gigsterous.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2CC9211D56ABFF08F374A98 /* Pods_GigsterousTests.framework in Frameworks */,
+				EBEB0F557D691621FEA7A68C /* Pods_Gigsterous_GigsterousTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,19 +173,19 @@
 			isa = PBXGroup;
 			children = (
 				12C13A8988E6893739DB0B53 /* Pods.framework */,
-				37E01F8956832288083A7052 /* Pods_Gigsterous.framework */,
-				69D646BE9B77CEF568A59774 /* Pods_GigsterousTests.framework */,
+				EFAEA8826E7AEEE11226AF97 /* Pods_Gigsterous.framework */,
+				2C7B12BA8799CF9764E17F86 /* Pods_Gigsterous_GigsterousTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4970A998636ED96F63DE41F3 /* Pods */ = {
+		60E8401C873C216E9EC946AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5AD90F61994240073DD87E34 /* Pods-Gigsterous.debug.xcconfig */,
-				F178591FE799970659B007BD /* Pods-Gigsterous.release.xcconfig */,
-				D7EF711A089419EE23E0F191 /* Pods-GigsterousTests.debug.xcconfig */,
-				F7CA5D5D9CA6B3C147C2B2BE /* Pods-GigsterousTests.release.xcconfig */,
+				31F22BFA117F960674DAB2E7 /* Pods-Gigsterous.debug.xcconfig */,
+				84D96D390D09F95BAA9BEABB /* Pods-Gigsterous.release.xcconfig */,
+				7B5BB5B7DAA85B16BE6E0A15 /* Pods-Gigsterous-GigsterousTests.debug.xcconfig */,
+				D1C546F93B442330F955F001 /* Pods-Gigsterous-GigsterousTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -206,6 +223,8 @@
 				C1FD6BE81D95051000E11288 /* Skill.swift */,
 				C12FA0ED1D93A224005A056D /* Ensemble.swift */,
 				C12FA0EE1D93A224005A056D /* Event.swift */,
+				E042AABF1EC6245700C51291 /* Venue.swift */,
+				E0E25A491E0D2B46006F8C14 /* ResponseObject.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -213,9 +232,9 @@
 		C12FA0EC1D93A206005A056D /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				C12FA0F31D93A22E005A056D /* Client.swift */,
-				C1FD6BDF1D94353200E11288 /* ClientMoya.swift */,
-				C1FD6BE21D9436EC00E11288 /* API.swift */,
+				E0E25A451E0D22A9006F8C14 /* Router.swift */,
+				E0E25A3D1E0C4993006F8C14 /* ReactiveClient.swift */,
+				E0E25A421E0C4A73006F8C14 /* AFClient.swift */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -226,6 +245,7 @@
 				C12FA0F81D93A26A005A056D /* ensembles.json */,
 				C12FA0F91D93A26A005A056D /* events.json */,
 				C12FA0FA1D93A26A005A056D /* people.json */,
+				E081746D1E087BD30077C0C8 /* venues.json */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -269,8 +289,10 @@
 		C1AF4BDE1D918CA600516BC7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				C11D16DF1D942D33000C874E /* ClientMock.swift */,
-				C1F0F44C1D24249C004124E2 /* GigsterousTests.swift */,
+				E05ADE201EC783C90086C9C3 /* Model */,
+				E05ADE1D1EC77E2E0086C9C3 /* Networking */,
+				E0E93D6F1EC6F15300E60A11 /* ViewModel */,
+				E0CDDDF71EC7514C000175C4 /* Helpers */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -299,7 +321,7 @@
 				C1F0F4561D24249C004124E2 /* GigsterousUITests */,
 				C1F0F4331D24249C004124E2 /* Products */,
 				1C6B135251882588CF3CE799 /* Frameworks */,
-				4970A998636ED96F63DE41F3 /* Pods */,
+				60E8401C873C216E9EC946AF /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -341,10 +363,50 @@
 			path = GigsterousUITests;
 			sourceTree = "<group>";
 		};
+		E05ADE1D1EC77E2E0086C9C3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E05ADE201EC783C90086C9C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E05ADE211EC7843F0086C9C3 /* PersonTests.swift */,
+				E05ADE251EC787150086C9C3 /* SkillTests.swift */,
+				E05ADE271EC787270086C9C3 /* EnsembleTests.swift */,
+				E05ADE291EC787350086C9C3 /* EventTests.swift */,
+				E05ADE231EC786530086C9C3 /* VenueTests.swift */,
+				E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		E0C2CA0F1DC3956100779C7C /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */,
+				E042AABD1EC6221C00C51291 /* EventsTableViewModel.swift */,
+				E042AAC21EC6265200C51291 /* EnsemblesTableViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		E0CDDDF71EC7514C000175C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */,
+				E0CDDDFB1EC75342000175C4 /* DateExtensionTests.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		E0E93D6F1EC6F15300E60A11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E0E93D701EC6F18800E60A11 /* EventFormViewModelTests.swift */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -356,13 +418,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F0F45C1D24249C004124E2 /* Build configuration list for PBXNativeTarget "Gigsterous" */;
 			buildPhases = (
-				4D81F69002E9AECC6B9ACFBF /* [CP] Check Pods Manifest.lock */,
+				6E544E20A619A40B56E8D78A /* [CP] Check Pods Manifest.lock */,
 				C1F0F42E1D24249C004124E2 /* Sources */,
 				C1F0F42F1D24249C004124E2 /* Frameworks */,
 				C1F0F4301D24249C004124E2 /* Resources */,
-				A7BD19D63D4992271E2AC927 /* [CP] Embed Pods Frameworks */,
-				829C9F8EFB6915BA22C4624C /* [CP] Copy Pods Resources */,
 				E0A390071DE37140009A6248 /* ShellScript */,
+				3FD2302166B3D969344A6570 /* [CP] Embed Pods Frameworks */,
+				8883DD0CDE4C2B5259D3E677 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -377,12 +439,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1F0F45F1D24249C004124E2 /* Build configuration list for PBXNativeTarget "GigsterousTests" */;
 			buildPhases = (
-				EADE2245643EF4C2523399B4 /* [CP] Check Pods Manifest.lock */,
+				2B2DD7DC1499FA5B14F5633B /* [CP] Check Pods Manifest.lock */,
 				C1F0F4441D24249C004124E2 /* Sources */,
 				C1F0F4451D24249C004124E2 /* Frameworks */,
 				C1F0F4461D24249C004124E2 /* Resources */,
-				6DCA394984D13A60DD6F6CC9 /* [CP] Embed Pods Frameworks */,
-				9A453234E30F89463706321F /* [CP] Copy Pods Resources */,
+				49D67F9686F4E71AE1E721E4 /* [CP] Embed Pods Frameworks */,
+				70445B5F4DFE815EBE851688 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -419,7 +481,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Svacha, Michal";
 				TargetAttributes = {
 					C1F0F4311D24249C004124E2 = {
@@ -467,6 +529,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C1F0F4421D24249C004124E2 /* LaunchScreen.storyboard in Resources */,
+				E081746E1E087BD30077C0C8 /* venues.json in Resources */,
 				C1FD6BE51D9482F500E11288 /* people.json in Resources */,
 				C1FD6BE61D9482F800E11288 /* events.json in Resources */,
 				C18B7A8E1D6DBE520032E357 /* Localizable.strings in Resources */,
@@ -481,6 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C12FA0FC1D93A26A005A056D /* events.json in Resources */,
+				E081746F1E087BD30077C0C8 /* venues.json in Resources */,
 				C12FA0FB1D93A26A005A056D /* ensembles.json in Resources */,
 				C12FA0FD1D93A26A005A056D /* people.json in Resources */,
 			);
@@ -496,7 +560,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D81F69002E9AECC6B9ACFBF /* [CP] Check Pods Manifest.lock */ = {
+		2B2DD7DC1499FA5B14F5633B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,55 +572,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6DCA394984D13A60DD6F6CC9 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		829C9F8EFB6915BA22C4624C /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9A453234E30F89463706321F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GigsterousTests/Pods-GigsterousTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A7BD19D63D4992271E2AC927 /* [CP] Embed Pods Frameworks */ = {
+		3FD2302166B3D969344A6570 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -571,20 +590,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E0A390071DE37140009A6248 /* ShellScript */ = {
+		49D67F9686F4E71AE1E721E4 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Fabric/run\" b41d4c9a1be6c2fac24ce6ac9c91353a10741ce7 51863973f5a5a69bc7232c817e95d4e8f434c9b84b946dca49db506d139feb21";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous-GigsterousTests/Pods-Gigsterous-GigsterousTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		EADE2245643EF4C2523399B4 /* [CP] Check Pods Manifest.lock */ = {
+		6E544E20A619A40B56E8D78A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -596,8 +617,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		70445B5F4DFE815EBE851688 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous-GigsterousTests/Pods-Gigsterous-GigsterousTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8883DD0CDE4C2B5259D3E677 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Gigsterous/Pods-Gigsterous-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E0A390071DE37140009A6248 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 7f8d53ac9880859f111bbea85b04e0dcffe4b209 8249270ff2c95db1077a03485782c7ebf59e98628438fe0115eba8c74ca3fa69";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -612,25 +676,28 @@
 				E002E0691DA6514400232A4D /* EventFormViewController.swift in Sources */,
 				C152E92A1D6493A0005AAF2F /* ProfileTableViewController.swift in Sources */,
 				C152E9371D64A84A005AAF2F /* ColorSchemes.swift in Sources */,
-				C11D16E01D942D33000C874E /* ClientMock.swift in Sources */,
+				E0E25A4A1E0D2B46006F8C14 /* ResponseObject.swift in Sources */,
 				C12FA0F21D93A224005A056D /* Person.swift in Sources */,
 				C1F0F4361D24249C004124E2 /* AppDelegate.swift in Sources */,
+				E042AAC31EC6265200C51291 /* EnsemblesTableViewModel.swift in Sources */,
 				C152E9351D64A303005AAF2F /* NavigationViewController.swift in Sources */,
 				C152E9221D649357005AAF2F /* EnsemblesTableViewController.swift in Sources */,
 				E0F5EA4B1DC6663000700C56 /* DateExtension.swift in Sources */,
-				C12FA0F41D93A22E005A056D /* Client.swift in Sources */,
 				C152E9281D64938F005AAF2F /* AuditionsTableViewController.swift in Sources */,
 				E00B93281DA2B49600A77A08 /* DateStringTransform.swift in Sources */,
-				C1FD6BE31D9436EC00E11288 /* API.swift in Sources */,
+				E042AAC01EC6245700C51291 /* Venue.swift in Sources */,
 				C152E9261D64937C005AAF2F /* EventsTableViewController.swift in Sources */,
+				E042AABE1EC6221C00C51291 /* EventsTableViewModel.swift in Sources */,
+				E0E25A3E1E0C4993006F8C14 /* ReactiveClient.swift in Sources */,
 				C152E9391D64C7D7005AAF2F /* UIColorExtension.swift in Sources */,
-				C1FD6BE01D94353200E11288 /* ClientMoya.swift in Sources */,
 				C152E92D1D649DE5005AAF2F /* TabViewController.swift in Sources */,
 				C1FD6BE91D95051000E11288 /* Skill.swift in Sources */,
 				E0F43E191DB6A8C40087BB10 /* IndexPathExtension.swift in Sources */,
 				C1F0F4381D24249C004124E2 /* HomeViewController.swift in Sources */,
+				E0E25A461E0D22A9006F8C14 /* Router.swift in Sources */,
 				C12FA0F11D93A224005A056D /* Event.swift in Sources */,
 				E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */,
+				E0E25A431E0C4A73006F8C14 /* AFClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,17 +705,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E04796901DA3F47600BE2DD7 /* DateStringTransform.swift in Sources */,
-				C1FD6BE11D94353200E11288 /* ClientMoya.swift in Sources */,
-				C1FD6BE41D9436EC00E11288 /* API.swift in Sources */,
-				C11D16DE1D94249F000C874E /* Client.swift in Sources */,
-				C1F0F44D1D24249C004124E2 /* GigsterousTests.swift in Sources */,
-				C1FD6BDC1D94348900E11288 /* Ensemble.swift in Sources */,
-				C11D16E11D942D33000C874E /* ClientMock.swift in Sources */,
-				C1FD6BDE1D94348900E11288 /* Person.swift in Sources */,
-				C1FD6BEA1D95051000E11288 /* Skill.swift in Sources */,
-				C1FD6BDD1D94348900E11288 /* Event.swift in Sources */,
-				C11D16E41D94325D000C874E /* Constants.swift in Sources */,
+				E05ADE261EC787150086C9C3 /* SkillTests.swift in Sources */,
+				E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */,
+				E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */,
+				E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */,
+				E05ADE281EC787270086C9C3 /* EnsembleTests.swift in Sources */,
+				E05ADE241EC786530086C9C3 /* VenueTests.swift in Sources */,
+				E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */,
+				E05ADE2A1EC787350086C9C3 /* EventTests.swift in Sources */,
+				E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */,
+				E05ADE2C1EC78A4C0086C9C3 /* ResponseObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -736,7 +802,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -780,7 +846,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -791,15 +857,14 @@
 		};
 		C1F0F45D1D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5AD90F61994240073DD87E34 /* Pods-Gigsterous.debug.xcconfig */;
+			baseConfigurationReference = 31F22BFA117F960674DAB2E7 /* Pods-Gigsterous.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.Gigsterous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -809,14 +874,13 @@
 		};
 		C1F0F45E1D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F178591FE799970659B007BD /* Pods-Gigsterous.release.xcconfig */;
+			baseConfigurationReference = 84D96D390D09F95BAA9BEABB /* Pods-Gigsterous.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = Gigsterous/Resources/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.Gigsterous;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -826,14 +890,12 @@
 		};
 		C1F0F4601D24249C004124E2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D7EF711A089419EE23E0F191 /* Pods-GigsterousTests.debug.xcconfig */;
+			baseConfigurationReference = 7B5BB5B7DAA85B16BE6E0A15 /* Pods-Gigsterous-GigsterousTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -844,14 +906,12 @@
 		};
 		C1F0F4611D24249C004124E2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7CA5D5D9CA6B3C147C2B2BE /* Pods-GigsterousTests.release.xcconfig */;
+			baseConfigurationReference = D1C546F93B442330F955F001 /* Pods-Gigsterous-GigsterousTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -866,7 +926,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -881,7 +940,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 584XPHFEML;
 				INFOPLIST_FILE = GigsterousUITests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gigsterous.ios.GigsterousUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

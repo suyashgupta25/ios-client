@@ -16,11 +16,11 @@ extension UIColor {
     
     /// Enum values for additional colors.
     enum Name: UInt32 {
-        case DarkBlack = 0x2B2118ff
-        case Cyan = 0x188FA7ff
-        case AirBlue = 0x769FB6ff
-        case GardBlue = 0x2B275Dff
-        case GardYellow = 0xF1F1C2ff
+        case darkBlack = 0x2B2118ff
+        case cyan = 0x188FA7ff
+        case airBlue = 0x769FB6ff
+        case gardBlue = 0x2B275Dff
+        case gardYellow = 0xF1F1C2ff
     }
     
     /// Convenience initializer to initialize color with a given Name enum value.

@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 /// Decorator protocol for custom color schemes to allow easy usage.
 protocol ColorScheme {
     
@@ -33,7 +32,7 @@ class ColorSchemes {
 /// ColorScheme intended for prototyping and evaluating different color combinations.
 struct BetaScheme: ColorScheme {
     func getDominantColor() -> UIColor {
-        return UIColor(named: .DarkBlack)
+        return UIColor(named: .darkBlack)
     }
     
     func getRecessiveColor() -> UIColor {
@@ -41,7 +40,7 @@ struct BetaScheme: ColorScheme {
     }
     
     func getTintColor() -> UIColor {
-        return UIColor(named: .Cyan)
+        return UIColor(named: .cyan)
     }
     
     func getFontColor() -> UIColor {

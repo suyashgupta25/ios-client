@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.2
+osx_image: xcode8.3
 
 branches:
   only:
@@ -12,7 +12,6 @@ before_script:
 before_install:
   - brew update
   - brew install swiftlint || true
-  - pod update Moya
 
 script:
   - if [ "$TRAVIS_BRANCH" = "develop" ]; then fastlane test; fi
@@ -20,4 +19,4 @@ script:
   - swiftlint
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash) -J 'Gigsterous'

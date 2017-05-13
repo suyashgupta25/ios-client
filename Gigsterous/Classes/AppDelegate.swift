@@ -9,6 +9,7 @@
 import UIKit
 import Fabric
 import Crashlytics
+import OHHTTPStubs
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +19,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidFinishLaunching(_ application: UIApplication) {
         // Initialize Fabric
         Fabric.with([Crashlytics.self])
+        
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/events")) { _ in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile(
+                    "events.json",
+                    type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type": "application/json"])
+        }
+        
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/people")) { _ in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile(
+                    "people.json",
+                    type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type": "application/json"])
+        }
+        
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/ensembles")) { _ in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile(
+                    "ensembles.json",
+                    type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type": "application/json"])
+        }
+        
+        _ = stub(condition: isScheme("https") && isHost("api.gigsterous.com") && isPath("/venues")) { _ in
+            return OHHTTPStubsResponse(
+                fileAtPath: OHPathForFile(
+                    "venues.json",
+                    type(of: self))!,
+                statusCode: 200,
+                headers: ["Content-Type": "application/json"])
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
