@@ -43,6 +43,10 @@
 		E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */; };
 		E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE211EC7843F0086C9C3 /* PersonTests.swift */; };
 		E05ADE241EC786530086C9C3 /* VenueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE231EC786530086C9C3 /* VenueTests.swift */; };
+		E05ADE261EC787150086C9C3 /* SkillTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE251EC787150086C9C3 /* SkillTests.swift */; };
+		E05ADE281EC787270086C9C3 /* EnsembleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE271EC787270086C9C3 /* EnsembleTests.swift */; };
+		E05ADE2A1EC787350086C9C3 /* EventTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE291EC787350086C9C3 /* EventTests.swift */; };
+		E05ADE2C1EC78A4C0086C9C3 /* ResponseObjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */; };
 		E081746E1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E081746F1E087BD30077C0C8 /* venues.json in Resources */ = {isa = PBXBuildFile; fileRef = E081746D1E087BD30077C0C8 /* venues.json */; };
 		E0C2CA0E1DC3952200779C7C /* EventFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */; };
@@ -120,6 +124,10 @@
 		E05ADE1E1EC77E520086C9C3 /* RouterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RouterTests.swift; path = Networking/RouterTests.swift; sourceTree = "<group>"; };
 		E05ADE211EC7843F0086C9C3 /* PersonTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonTests.swift; path = Model/PersonTests.swift; sourceTree = "<group>"; };
 		E05ADE231EC786530086C9C3 /* VenueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VenueTests.swift; path = Model/VenueTests.swift; sourceTree = "<group>"; };
+		E05ADE251EC787150086C9C3 /* SkillTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SkillTests.swift; path = Model/SkillTests.swift; sourceTree = "<group>"; };
+		E05ADE271EC787270086C9C3 /* EnsembleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnsembleTests.swift; path = Model/EnsembleTests.swift; sourceTree = "<group>"; };
+		E05ADE291EC787350086C9C3 /* EventTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventTests.swift; path = Model/EventTests.swift; sourceTree = "<group>"; };
+		E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseObjectTests.swift; path = Model/ResponseObjectTests.swift; sourceTree = "<group>"; };
 		E081746D1E087BD30077C0C8 /* venues.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = venues.json; sourceTree = "<group>"; };
 		E0C2CA0D1DC3952200779C7C /* EventFormViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventFormViewModel.swift; path = Gigsterous/Classes/ViewModel/EventFormViewModel.swift; sourceTree = SOURCE_ROOT; };
 		E0CDDDF81EC75187000175C4 /* IndexPathExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndexPathExtensionTests.swift; path = Helpers/IndexPathExtensionTests.swift; sourceTree = "<group>"; };
@@ -367,7 +375,11 @@
 			isa = PBXGroup;
 			children = (
 				E05ADE211EC7843F0086C9C3 /* PersonTests.swift */,
+				E05ADE251EC787150086C9C3 /* SkillTests.swift */,
+				E05ADE271EC787270086C9C3 /* EnsembleTests.swift */,
+				E05ADE291EC787350086C9C3 /* EventTests.swift */,
 				E05ADE231EC786530086C9C3 /* VenueTests.swift */,
+				E05ADE2B1EC78A4C0086C9C3 /* ResponseObjectTests.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -693,12 +705,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05ADE261EC787150086C9C3 /* SkillTests.swift in Sources */,
 				E05ADE1F1EC77E520086C9C3 /* RouterTests.swift in Sources */,
 				E0E93D711EC6F18800E60A11 /* EventFormViewModelTests.swift in Sources */,
 				E05ADE221EC7843F0086C9C3 /* PersonTests.swift in Sources */,
+				E05ADE281EC787270086C9C3 /* EnsembleTests.swift in Sources */,
 				E05ADE241EC786530086C9C3 /* VenueTests.swift in Sources */,
 				E0CDDDFC1EC75342000175C4 /* DateExtensionTests.swift in Sources */,
+				E05ADE2A1EC787350086C9C3 /* EventTests.swift in Sources */,
 				E0CDDDF91EC75187000175C4 /* IndexPathExtensionTests.swift in Sources */,
+				E05ADE2C1EC78A4C0086C9C3 /* ResponseObjectTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
