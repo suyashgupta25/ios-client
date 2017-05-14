@@ -16,6 +16,7 @@ profile
 DerivedData
 .idea/
 Pods
+.env.*
 fastlane/README.md
 fastlane/*.xml
 fastlane/test_output/*.junit
