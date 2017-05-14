@@ -1,18 +1,10 @@
 # More documentation about how to customize your build
 # can be found here:
 # https://docs.fastlane.tools
-fastlane_version "1.109.0"
-
-# This value helps us track success metrics for Fastfiles
-# we automatically generate. Feel free to remove this line
-# once you get things running smoothly!
+fastlane_version "2.0.0"
 generated_fastfile_id "352c236c-b8b9-4696-8d5a-42b3a0694b0f"
-
 default_platform :ios
 
-# Fastfile actions accept additional configuration, but
-# don't worry, fastlane will prompt you for required
-# info which you can add here later
 lane :test do
     scan(
         scheme: "Gigsterous",
@@ -22,10 +14,26 @@ lane :test do
     )
 end
 
+lane :provision do
+    produce(
+        app_name: 'Gigsterous',
+        language: 'English',
+        app_version: '1.0.0',
+        sku: ENV['SKU']
+    )
+
+    match(type: "development")
+end
+
 lane :beta do
+    match(type: "development")
+
     # build your iOS app
     gym(
-        scheme: "Gigsterous"
+        scheme: "Gigsterous",
+        output_name: "Gigsterous",
+        output_directory: "./build",
+        clean: true
     )
 
     # upload to Beta by Crashlytics

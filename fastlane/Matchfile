@@ -1,0 +1,7 @@
+git_url "https://bitbucket.org/GigsterousCI/fastlane_certificates.git"
+git_branch "gigsterous"
+
+type "development" # The default type, can be: appstore, adhoc, enterprise or development
+
+app_identifier "com.gigsterous.mobile.Gigsterous"
+team_id ENV['ITUNES_TEAM_ID']
